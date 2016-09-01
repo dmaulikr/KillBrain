@@ -16,7 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+  // 这个游戏蛮吊的！！！！
   self.window = [[UIWindow alloc] init];
   self.window.frame = [UIScreen mainScreen].bounds;
   self.window.backgroundColor = [UIColor whiteColor];
