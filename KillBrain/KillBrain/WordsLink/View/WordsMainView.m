@@ -48,7 +48,7 @@
     _tipLabel.textColor = redColor();
     _tipLabel.backgroundColor = yellowColor();
     _tipLabel.font = UIFontWithSize(12);
-    _tipLabel.text = @"tip:在规定观察时间内，找出5组对应的成语，即为通关";
+    _tipLabel.text = wordsLinkRuleTip;
     _tipLabel.numberOfLines = 3;
     
     _contentLabel = [[UILabel alloc] init];

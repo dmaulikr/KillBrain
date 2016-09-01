@@ -10,4 +10,8 @@
 
 @interface MemonryController : UIViewController
 
+- (void)didDeselectAtIndex:(NSInteger)index;
+- (void)didSelectAtIndex:(NSInteger)index;
+- (BOOL)isSelectedAtIndex:(NSInteger)index;
+
 @end

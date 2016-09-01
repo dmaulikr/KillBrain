@@ -42,7 +42,7 @@
                 <outlet property="bgIconView" destination="0JU-Rp-61M" id="IUB-3T-4Ma"/>
                 <outlet property="titleLabel" destination="J1N-Eb-0j5" id="3kO-F7-iEg"/>
             </connections>
-            <point key="canvasLocation" x="124" y="243"/>
+            <point key="canvasLocation" x="278" y="238"/>
         </tableViewCell>
     </objects>
 </document>

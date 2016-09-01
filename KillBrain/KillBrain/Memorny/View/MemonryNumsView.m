@@ -53,7 +53,7 @@
     _tipLabel.textColor = redColor();
     _tipLabel.backgroundColor = whiteColor();
     _tipLabel.font = UIFontWithSize(12);
-    _tipLabel.text = @"tip:在规定观察时间内，观察数字的排列顺序，观察时间结束后，会随机交换任意两个数字，每回合会获得两次的答题机会，注意：倒计时结束之前，数字按钮不可选";
+    _tipLabel.text = memonryRuleTip;
     _tipLabel.numberOfLines = 3;
     
     _leaveCountLabel = [[UILabel alloc] init];

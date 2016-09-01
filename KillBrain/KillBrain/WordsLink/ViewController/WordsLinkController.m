@@ -30,7 +30,7 @@
   [super viewDidLoad];
 
   self.view.backgroundColor = whiteColor();
-  _anwerTimer = 30;
+  _anwerTimer = wordsLinkNeedTime;
   _corrected = YES;
   
   [self.api loadData:^void (NSArray *datas) {

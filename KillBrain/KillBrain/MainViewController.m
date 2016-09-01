@@ -13,6 +13,7 @@
 #import "FastCountController.h"
 #import "MemonryController.h"
 #import "WordsLinkController.h"
+#import "CustomController.h"
 @interface MainViewController ()
 @property (nonatomic, strong) MainShowView *showView;
 @property (nonatomic, strong) MainViewProtocol *protocol;
@@ -62,7 +63,8 @@
       break;
     case 3:
     {
-      return;
+      CustomController *custom = [[CustomController alloc] init];
+      [self.navigationController pushViewController:custom animated:YES];
     }
       break;
     default:

@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		3A2A22ED077064B811980A57 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3F498FA7446CF1FAD2C7B8 /* libPods.a */; };
 		C32684671D68641300E1BAA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C32684661D68641300E1BAA6 /* main.m */; };
-		C326846A1D68641300E1BAA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C32684691D68641300E1BAA6 /* AppDelegate.m */; };
-		C32684701D68641300E1BAA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C326846E1D68641300E1BAA6 /* Main.storyboard */; };
 		C32684721D68641300E1BAA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32684711D68641300E1BAA6 /* Assets.xcassets */; };
 		C32684751D68641300E1BAA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32684731D68641300E1BAA6 /* LaunchScreen.storyboard */; };
 		C32684801D68641300E1BAA6 /* KillBrainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C326847F1D68641300E1BAA6 /* KillBrainTests.m */; };
@@ -61,6 +59,11 @@
 		C3908E9F1D69B54400DDAD3C /* time3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3908E961D69B54400DDAD3C /* time3.png */; };
 		C3B5F6AA1D6D788D00BA5D3B /* MemonryController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B5F6A91D6D788D00BA5D3B /* MemonryController.m */; };
 		C3B5F6AD1D6D79D700BA5D3B /* MemonryNumsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B5F6AC1D6D79D700BA5D3B /* MemonryNumsView.m */; };
+		C3B7E2541D77F5AA0033B9E7 /* MemonryApi.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B7E2531D77F5AA0033B9E7 /* MemonryApi.m */; };
+		C3B7E2641D77FC890033B9E7 /* MemonryProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B7E2631D77FC890033B9E7 /* MemonryProtocol.m */; };
+		C3B7E26B1D7800DD0033B9E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B7E2671D7800DD0033B9E7 /* AppDelegate.m */; };
+		C3B7E26C1D7800DD0033B9E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B7E2681D7800DD0033B9E7 /* Main.storyboard */; };
+		C3B7E26F1D7805B80033B9E7 /* CustomController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B7E26E1D7805B80033B9E7 /* CustomController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,9 +89,6 @@
 		66A61285C8CB7235F6CD55F5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C32684621D68641300E1BAA6 /* KillBrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KillBrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32684661D68641300E1BAA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C32684681D68641300E1BAA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
-		C32684691D68641300E1BAA6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
-		C326846F1D68641300E1BAA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C32684711D68641300E1BAA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C32684741D68641300E1BAA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C32684761D68641300E1BAA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,8 +98,6 @@
 		C32684861D68641300E1BAA6 /* KillBrainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KillBrainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C326848A1D68641300E1BAA6 /* KillBrainUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KillBrainUITests.m; sourceTree = "<group>"; };
 		C326848C1D68641300E1BAA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C32684A31D6869C800E1BAA6 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
-		C32684A41D686A8000E1BAA6 /* CommonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonHeader.h; path = ../CommonHeader.h; sourceTree = "<group>"; };
 		C32684A61D686B1000E1BAA6 /* KKView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KKView+Common.h"; sourceTree = "<group>"; };
 		C32684A71D686B1000E1BAA6 /* KKView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KKView+Common.m"; sourceTree = "<group>"; };
 		C32684A81D686B1000E1BAA6 /* KKView+KKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KKView+KKExtension.h"; sourceTree = "<group>"; };
@@ -176,6 +174,17 @@
 		C3B5F6A91D6D788D00BA5D3B /* MemonryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemonryController.m; sourceTree = "<group>"; };
 		C3B5F6AB1D6D79D700BA5D3B /* MemonryNumsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemonryNumsView.h; sourceTree = "<group>"; };
 		C3B5F6AC1D6D79D700BA5D3B /* MemonryNumsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemonryNumsView.m; sourceTree = "<group>"; };
+		C3B7E2521D77F5AA0033B9E7 /* MemonryApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemonryApi.h; sourceTree = "<group>"; };
+		C3B7E2531D77F5AA0033B9E7 /* MemonryApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemonryApi.m; sourceTree = "<group>"; };
+		C3B7E2621D77FC890033B9E7 /* MemonryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemonryProtocol.h; path = KillBrain/Memorny/Api/MemonryProtocol.h; sourceTree = SOURCE_ROOT; };
+		C3B7E2631D77FC890033B9E7 /* MemonryProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MemonryProtocol.m; path = KillBrain/Memorny/Api/MemonryProtocol.m; sourceTree = SOURCE_ROOT; };
+		C3B7E2661D7800DD0033B9E7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3B7E2671D7800DD0033B9E7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3B7E2681D7800DD0033B9E7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C3B7E2691D7800DD0033B9E7 /* CommonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
+		C3B7E26A1D7800DD0033B9E7 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C3B7E26D1D7805B80033B9E7 /* CustomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomController.h; sourceTree = "<group>"; };
+		C3B7E26E1D7805B80033B9E7 /* CustomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,11 +247,12 @@
 		C32684641D68641300E1BAA6 /* KillBrain */ = {
 			isa = PBXGroup;
 			children = (
+				C3B7E2551D77F9960033B9E7 /* Other */,
 				C3908E8D1D69B54400DDAD3C /* images */,
 				C32684BC1D68760F00E1BAA6 /* Home */,
 				C3B5F6A31D6D786D00BA5D3B /* Memorny */,
 				C32C9A241D766E6A0040863D /* WordsLink */,
-				C32684BF1D68766900E1BAA6 /* Other */,
+				C3B7E25D1D77FBED0033B9E7 /* Custom */,
 				C32684A51D686B0700E1BAA6 /* Category */,
 				C32684711D68641300E1BAA6 /* Assets.xcassets */,
 				C32684731D68641300E1BAA6 /* LaunchScreen.storyboard */,
@@ -300,18 +310,6 @@
 				C381B88B1D77DA0F00861B90 /* FastCount */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		C32684BF1D68766900E1BAA6 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				C32684681D68641300E1BAA6 /* AppDelegate.h */,
-				C32684691D68641300E1BAA6 /* AppDelegate.m */,
-				C32684A31D6869C800E1BAA6 /* PrefixHeader.pch */,
-				C32684A41D686A8000E1BAA6 /* CommonHeader.h */,
-				C326846E1D68641300E1BAA6 /* Main.storyboard */,
-			);
-			path = Other;
 			sourceTree = "<group>";
 		};
 		C32C9A241D766E6A0040863D /* WordsLink */ = {
@@ -566,19 +564,12 @@
 		C3B5F6A31D6D786D00BA5D3B /* Memorny */ = {
 			isa = PBXGroup;
 			children = (
-				C3B5F6A41D6D786D00BA5D3B /* Api */,
+				C3B7E2511D77F59E0033B9E7 /* Api */,
 				C3B5F6A51D6D786D00BA5D3B /* Controller */,
 				C3B5F6A61D6D786D00BA5D3B /* Protocol */,
 				C3B5F6A71D6D786D00BA5D3B /* View */,
 			);
 			path = Memorny;
-			sourceTree = "<group>";
-		};
-		C3B5F6A41D6D786D00BA5D3B /* Api */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Api;
 			sourceTree = "<group>";
 		};
 		C3B5F6A51D6D786D00BA5D3B /* Controller */ = {
@@ -593,6 +584,8 @@
 		C3B5F6A61D6D786D00BA5D3B /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				C3B7E2621D77FC890033B9E7 /* MemonryProtocol.h */,
+				C3B7E2631D77FC890033B9E7 /* MemonryProtocol.m */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -604,6 +597,68 @@
 				C3B5F6AC1D6D79D700BA5D3B /* MemonryNumsView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C3B7E2511D77F59E0033B9E7 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				C3B7E2521D77F5AA0033B9E7 /* MemonryApi.h */,
+				C3B7E2531D77F5AA0033B9E7 /* MemonryApi.m */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		C3B7E2551D77F9960033B9E7 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C3B7E2661D7800DD0033B9E7 /* AppDelegate.h */,
+				C3B7E2671D7800DD0033B9E7 /* AppDelegate.m */,
+				C3B7E2681D7800DD0033B9E7 /* Main.storyboard */,
+				C3B7E2691D7800DD0033B9E7 /* CommonHeader.h */,
+				C3B7E26A1D7800DD0033B9E7 /* PrefixHeader.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		C3B7E25D1D77FBED0033B9E7 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				C3B7E2611D77FC230033B9E7 /* Api */,
+				C3B7E2601D77FC190033B9E7 /* Protocol */,
+				C3B7E25F1D77FC0C0033B9E7 /* View */,
+				C3B7E25E1D77FBFF0033B9E7 /* Controller */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		C3B7E25E1D77FBFF0033B9E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C3B7E26D1D7805B80033B9E7 /* CustomController.h */,
+				C3B7E26E1D7805B80033B9E7 /* CustomController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C3B7E25F1D77FC0C0033B9E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3B7E2601D77FC190033B9E7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		C3B7E2611D77FC230033B9E7 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 		FC46B5A375D20361C9808372 /* Frameworks */ = {
@@ -728,7 +783,6 @@
 				C38F91501D6C293D00DAB78B /* FFTspark.png in Resources */,
 				C3908E9B1D69B54400DDAD3C /* go.png in Resources */,
 				C38F919B1D6C534000DAB78B /* alpha@2x.png in Resources */,
-				C32684701D68641300E1BAA6 /* Main.storyboard in Resources */,
 				C3908E9A1D69B54400DDAD3C /* 4.jpg in Resources */,
 				C381B8C81D77DA3300861B90 /* TestAnswerView.xib in Resources */,
 				C3908E9D1D69B54400DDAD3C /* time1.png in Resources */,
@@ -738,6 +792,7 @@
 				C3908E9C1D69B54400DDAD3C /* time0.png in Resources */,
 				C3908E9E1D69B54400DDAD3C /* time2.png in Resources */,
 				C3908E9F1D69B54400DDAD3C /* time3.png in Resources */,
+				C3B7E26C1D7800DD0033B9E7 /* Main.storyboard in Resources */,
 				C3908E991D69B54400DDAD3C /* 3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -813,7 +868,6 @@
 			files = (
 				C381B8A61D77DA0F00861B90 /* SelectTimeView.m in Sources */,
 				C381B8CA1D77DA3300861B90 /* TestShowView.m in Sources */,
-				C326846A1D68641300E1BAA6 /* AppDelegate.m in Sources */,
 				C32684AC1D686B1000E1BAA6 /* KKView+Common.m in Sources */,
 				C381B8C51D77DA3300861B90 /* WrongProtocol.m in Sources */,
 				C381B8751D77CBBE00861B90 /* WordsLinkProtocol.m in Sources */,
@@ -823,8 +877,11 @@
 				C32C9A2E1D7675350040863D /* WordsMainView.m in Sources */,
 				C381B8A11D77DA0F00861B90 /* FastCountProtocol.m in Sources */,
 				C381B8871D77D9F000861B90 /* MainShowView.m in Sources */,
+				C3B7E2641D77FC890033B9E7 /* MemonryProtocol.m in Sources */,
+				C3B7E26F1D7805B80033B9E7 /* CustomController.m in Sources */,
 				C381B8A71D77DA0F00861B90 /* FastCountController.m in Sources */,
 				C381B8A51D77DA0F00861B90 /* SelectNum.m in Sources */,
+				C3B7E26B1D7800DD0033B9E7 /* AppDelegate.m in Sources */,
 				C381B8CC1D77DA3300861B90 /* TestViewController.m in Sources */,
 				C381B8881D77D9F000861B90 /* MainTableViewCell.m in Sources */,
 				C3B5F6AA1D6D788D00BA5D3B /* MemonryController.m in Sources */,
@@ -843,6 +900,7 @@
 				C381B87F1D77D99E00861B90 /* MainViewProtocol.m in Sources */,
 				C381B8A01D77DA0F00861B90 /* FastCountApi.m in Sources */,
 				C381B8CB1D77DA3300861B90 /* TestWrongView.m in Sources */,
+				C3B7E2541D77F5AA0033B9E7 /* MemonryApi.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -878,15 +936,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C326846E1D68641300E1BAA6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C326846F1D68641300E1BAA6 /* Base */,
-			);
-			name = Main.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		C32684731D68641300E1BAA6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -985,7 +1034,7 @@
 			baseConfigurationReference = 66A61285C8CB7235F6CD55F5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = KillBrain/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/likelin/Desktop/KillBrain/KillBrain/KillBrain/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = KillBrain/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -999,7 +1048,7 @@
 			baseConfigurationReference = 31C90C3A4258030E0DCB7CE0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = KillBrain/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/likelin/Desktop/KillBrain/KillBrain/KillBrain/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = KillBrain/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
