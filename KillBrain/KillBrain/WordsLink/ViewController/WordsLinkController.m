@@ -110,11 +110,13 @@
 
 - (BOOL)handleDatasWhenIsShowItemAtIndex:(NSInteger)index
 {
+
   if (self.selectDatas.count % 4 != 0) {
     NSInteger count = self.selectDatas.count % 4;
     for (unsigned int i = 0; i < count; i++) {
       [self.selectDatas removeObjectAtIndex:self.selectDatas.count - count + i];
     }
+    _corrected = YES;
   }
   else {
     if (_corrected == NO) {
@@ -124,7 +126,7 @@
       }
     }
   }
-  
+
   NSString *item = self.datas[index];
   if ([self.selectDatas containsObject:item]) {
     return NO;
