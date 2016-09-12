@@ -8,6 +8,9 @@
 
 #import "WordsApi.h"
 
+@interface WordsApi ()
+@property (nonatomic, strong) NSMutableArray *sourceData;
+@end
 @implementation WordsApi
 
 -(void)loadData:(void (^)(NSArray *))completion
@@ -26,10 +29,25 @@
   completion(origin);
 }
 
-
+/**
+ *  随机生成5个成语
+ */
 - (NSArray *)resultApi
 {
-  return @[@"国,色,天,香",@"八,仙,过,海",@"皆,大,欢,喜",@"金,玉,良,缘",@"两,小,无,猜"];
+  return self.sourceData;
+}
+
+- (NSMutableArray *)sourceData
+{
+  if (!_sourceData) {
+    NSMutableSet *set = [NSMutableSet set];
+    while ([set count] < 5) {
+      NSInteger index = arc4random() % [self sources].count;
+      [set addObject:[[self sources] objectAtIndex:index]];
+    }
+    _sourceData = [NSMutableArray arrayWithArray:[set allObjects]];
+  }
+  return _sourceData;
 }
 
 - (NSArray *)arrayOfStrings
@@ -43,6 +61,15 @@
   return [bigArray copy];
 }
 
+// TODO:所有的成语（后期需要进行处理）
+- (NSArray *)sources
+{
+  return @[@"左,顾,右,盼",@"走,马,观,花",@"趋,之,若,鹜",@"语,重,心,长",@"步,步,为,营",
+           @"叶,公,好,龙",@"天,下,无,双",@"海,阔,天,空",@"情,非,得,已",@"满,腹,经,纶",
+           @"偷,天,换,日",@"花,花,公,子",@"生,财,有,道",@"高,山,流,水",@"落,叶,归,根",
+           @"亡,羊,补,牢",@"千,军,万,马",@"滥,竽,充,数",@"一,见,钟,情",@"风,花,雪,月",
+           @"国,色,天,香",@"八,仙,过,海",@"皆,大,欢,喜",@"金,玉,良,缘",@"两,小,无,猜"];
+}
 
 /*
  // 判断两个数组是否相等

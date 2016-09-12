@@ -25,6 +25,7 @@
 
 @property (nonatomic, strong) UILabel *timerLabel;
 @property (nonatomic, strong) UILabel *contentLabel;
+@property (nonatomic, strong) UILabel *selectItemLabel;
 @property (nonatomic, weak) id<WordsMainViewDelegate>delegate;
 
 - (void)showContentLabel;

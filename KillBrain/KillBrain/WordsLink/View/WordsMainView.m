@@ -53,14 +53,21 @@
     
     _contentLabel = [[UILabel alloc] init];
     _contentLabel.backgroundColor = lightGrayColor();
-    _contentLabel.textColor = greenColor();
+    _contentLabel.textColor = whiteColor();
     _contentLabel.textAlignment = NSTextAlignmentCenter;
     _contentLabel.font = UIFontWithSize(13);
     _contentLabel.hidden = YES;
     
+    _selectItemLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, CGRectGetMaxY(_topView.frame) + 10, self.width - 10, 40)];
+    _selectItemLabel.backgroundColor = lightGrayColor();
+    _selectItemLabel.textColor = whiteColor();
+    _selectItemLabel.textAlignment = NSTextAlignmentCenter;
+    _selectItemLabel.font = UIFontWithSize(16);
+    
     [self addSubview:_topView];
     [self addSubview:_bottomView];
     [self addSubview:_contentLabel];
+    [self addSubview:_selectItemLabel];
     [_topView addSubview:_timerLabel];
     [_topView addSubview:_tipLabel];
     
@@ -121,11 +128,11 @@
 {
   NSInteger index = count / 4;
   if (count % 4 == 0) {
-    _bottomView.frame = CGRectMake(5, CGRectGetMaxY(_topView.frame) + 10, self.width - 10, 20 * 2 + (kButtonH * index) + 10 * (index - 1));
+    _bottomView.frame = CGRectMake(5, CGRectGetMaxY(_selectItemLabel.frame) + 10, self.width - 10, 20 * 2 + (kButtonH * index) + 10 * (index - 1));
   }
   else{
     index = count / 4 + 1;
-    _bottomView.frame = CGRectMake(5, CGRectGetMaxY(_topView.frame) + 10, self.width - 10, 20 * 2 + (kButtonH * index) + 10 * (index - 1));
+    _bottomView.frame = CGRectMake(5, CGRectGetMaxY(_selectItemLabel.frame) + 10, self.width - 10, 20 * 2 + (kButtonH * index) + 10 * (index - 1));
   }
   
 }

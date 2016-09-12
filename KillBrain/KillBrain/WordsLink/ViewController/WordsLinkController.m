@@ -21,6 +21,7 @@
 @property (nonatomic, strong) WordsLinkProtocol *protocol;
 @property (nonatomic, strong, readwrite) NSMutableArray *datas;
 @property (nonatomic, assign, readwrite) BOOL gameOver;    // 游戏结束
+@property (nonatomic, copy)  NSString *allWordsString;
 @end
 
 @implementation WordsLinkController
@@ -37,7 +38,22 @@
     self.datas = [NSMutableArray arrayWithArray:datas];
     [self setUpView];
     [self showTimer];
+    [self showResultAnswer];
   }];
+  
+}
+
+- (void)showResultAnswer
+{
+  NSMutableArray *results = [NSMutableArray array];
+  [self.api.resultApi enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    NSArray *words = [obj componentsSeparatedByString:@","];
+    if (words.count != 0) {
+        NSString *result = [words componentsJoinedByString:@""];
+        [results addObject:result];
+    }
+  }];
+  _allWordsString = [results componentsJoinedByString:@"、"];
 }
 
 - (void)setUpView
@@ -70,10 +86,10 @@
   if (_anwerTimer <= 0) {
     [self hiddenTimer];
     _gameOver = YES;
-    
+    _wordView.selectItemLabel.text = @"";
     [_wordView showContentLabel];
     _wordView.timerLabel.text = [NSString stringWithFormat:@"答题时间已经结束"];
-    _wordView.contentLabel.text = [NSString stringWithFormat:@"八仙过海、金玉良缘、两小无猜、皆大欢喜、国色天香"];
+    _wordView.contentLabel.text = _allWordsString;
     [_wordView reloadData];
   }
 }
@@ -82,6 +98,7 @@
 {
   NSString *item = self.datas[index];
   [self.selectDatas removeObject:item];
+  _wordView.selectItemLabel.text = [self.selectDatas componentsJoinedByString:@""];
 }
 
 
@@ -89,7 +106,8 @@
 {
   NSString *item = self.datas[index];
   [self.selectDatas addObject:item];
-  
+  _wordView.selectItemLabel.text = [self.selectDatas componentsJoinedByString:@""];
+
   if (self.selectDatas.count % 4 == 0) {
     NSMutableArray *arr = [NSMutableArray array];
     NSInteger count = self.selectDatas.count;
@@ -100,12 +118,16 @@
     NSString *numStr = [arr componentsJoinedByString:@","];
     if ([[self.api resultApi] containsObject:numStr]) {
       self.corrected = YES;
+      dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        _wordView.selectItemLabel.text = @"";
+      });
       [_wordView reloadData];
     }
     else {
       self.corrected = NO;
     }
   }
+
 }
 
 - (BOOL)handleDatasWhenIsShowItemAtIndex:(NSInteger)index
