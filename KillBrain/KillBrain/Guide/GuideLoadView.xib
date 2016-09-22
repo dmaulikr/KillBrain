@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GuideLoadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Pi-fJ-AWR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCh-gx-vjO">
+                    <rect key="frame" x="265" y="40" width="80" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="3Fk-u7-i2f"/>
+                        <constraint firstAttribute="height" constant="30" id="lrJ-iP-KIR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="3s跳过"/>
+                    <connections>
+                        <action selector="skipButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="FBP-fU-MLR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1Pi-fJ-AWR" secondAttribute="trailing" id="EVJ-gz-dXK"/>
+                <constraint firstItem="1Pi-fJ-AWR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="P0K-1u-i51"/>
+                <constraint firstItem="ZCh-gx-vjO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="SbG-94-dXI"/>
+                <constraint firstItem="1Pi-fJ-AWR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SpI-c9-JAp"/>
+                <constraint firstAttribute="trailing" secondItem="ZCh-gx-vjO" secondAttribute="trailing" constant="30" id="Wj5-vg-x8X"/>
+                <constraint firstAttribute="bottom" secondItem="1Pi-fJ-AWR" secondAttribute="bottom" id="fQd-Ix-Rs6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundImage" destination="1Pi-fJ-AWR" id="uA4-XI-Fae"/>
+                <outlet property="skipButton" destination="ZCh-gx-vjO" id="l0b-Ya-qtL"/>
+            </connections>
+            <point key="canvasLocation" x="-542" y="-277"/>
+        </view>
+    </objects>
+</document>

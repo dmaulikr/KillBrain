@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A2A22ED077064B811980A57 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3F498FA7446CF1FAD2C7B8 /* libPods.a */; };
+		138DF48C2BC2A7DBD4641DD3 /* libPods-KillBrain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC040A49748DB92C2FF4EC93 /* libPods-KillBrain.a */; };
+		C30F2AA51D92241600C8E3B3 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30F2AA41D92241600C8E3B3 /* GuideViewController.m */; };
+		C30F2AA81D92250100C8E3B3 /* GuideLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = C30F2AA71D92250100C8E3B3 /* GuideLoadView.m */; };
+		C30F2AAA1D92252100C8E3B3 /* GuideLoadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C30F2AA91D92252100C8E3B3 /* GuideLoadView.xib */; };
+		C30F2AAC1D922ED200C8E3B3 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C30F2AAB1D922ED200C8E3B3 /* bg.png */; };
+		C3105EB11D925C17001878DB /* KLTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3105EAC1D925C17001878DB /* KLTabBarViewController.m */; };
+		C3105EB21D925C17001878DB /* UITabBar+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = C3105EAE1D925C17001878DB /* UITabBar+Swizzling.m */; };
+		C3105EB31D925C17001878DB /* UIViewController+KKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C3105EB01D925C17001878DB /* UIViewController+KKExtension.m */; };
+		C31DA43D1D937DCE00B1F3B6 /* gu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C31DA43C1D937DCE00B1F3B6 /* gu.mp3 */; };
 		C32684671D68641300E1BAA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C32684661D68641300E1BAA6 /* main.m */; };
 		C32684721D68641300E1BAA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32684711D68641300E1BAA6 /* Assets.xcassets */; };
 		C32684751D68641300E1BAA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32684731D68641300E1BAA6 /* LaunchScreen.storyboard */; };
@@ -16,16 +24,23 @@
 		C32684AC1D686B1000E1BAA6 /* KKView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = C32684A71D686B1000E1BAA6 /* KKView+Common.m */; };
 		C32684AD1D686B1000E1BAA6 /* KKView+KKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C32684A91D686B1000E1BAA6 /* KKView+KKExtension.m */; };
 		C32684AE1D686B1000E1BAA6 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C32684AB1D686B1000E1BAA6 /* UIImage+Extension.m */; };
-		C32C9A2B1D766E800040863D /* WordsLinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32C9A2A1D766E800040863D /* WordsLinkController.m */; };
-		C32C9A2E1D7675350040863D /* WordsMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = C32C9A2D1D7675350040863D /* WordsMainView.m */; };
 		C33AA25D1D6AA4B9002BE484 /* log.png in Resources */ = {isa = PBXBuildFile; fileRef = C33AA25C1D6AA4B9002BE484 /* log.png */; };
-		C381B8751D77CBBE00861B90 /* WordsLinkProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C381B8741D77CBBE00861B90 /* WordsLinkProtocol.m */; };
-		C381B8781D77CD1100861B90 /* WordsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = C381B8771D77CD1100861B90 /* WordsApi.m */; };
+		C33D5B061D929B15007185E6 /* MemonryApi.m in Sources */ = {isa = PBXBuildFile; fileRef = C33D5AF21D929B15007185E6 /* MemonryApi.m */; };
+		C33D5B071D929B15007185E6 /* MemonryController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33D5AF51D929B15007185E6 /* MemonryController.m */; };
+		C33D5B081D929B15007185E6 /* MemonryNumsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C33D5AF81D929B15007185E6 /* MemonryNumsView.m */; };
+		C33D5B091D929B15007185E6 /* WordsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = C33D5AFC1D929B15007185E6 /* WordsApi.m */; };
+		C33D5B0A1D929B15007185E6 /* WordsLinkProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C33D5AFF1D929B15007185E6 /* WordsLinkProtocol.m */; };
+		C33D5B0B1D929B15007185E6 /* WordsMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = C33D5B021D929B15007185E6 /* WordsMainView.m */; };
+		C33D5B0C1D929B15007185E6 /* WordsLinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33D5B051D929B15007185E6 /* WordsLinkController.m */; };
+		C33D5B141D929B4B007185E6 /* CustomController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33D5B101D929B4B007185E6 /* CustomController.m */; };
+		C33D5B151D929B4B007185E6 /* HandSpeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = C33D5B131D929B4B007185E6 /* HandSpeedView.m */; };
+		C33D5B181D929BDF007185E6 /* MemonryProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C33D5B171D929BDF007185E6 /* MemonryProtocol.m */; };
+		C34934091D8FE0680004F730 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34934081D8FE0680004F730 /* LoginViewController.m */; };
 		C381B87F1D77D99E00861B90 /* MainViewProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C381B87E1D77D99E00861B90 /* MainViewProtocol.m */; };
 		C381B8871D77D9F000861B90 /* MainShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = C381B8811D77D9F000861B90 /* MainShowView.m */; };
 		C381B8881D77D9F000861B90 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C381B8831D77D9F000861B90 /* MainTableViewCell.m */; };
 		C381B8891D77D9F000861B90 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C381B8841D77D9F000861B90 /* MainTableViewCell.xib */; };
-		C381B88A1D77D9F000861B90 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C381B8861D77D9F000861B90 /* MainViewController.m */; };
+		C381B88A1D77D9F000861B90 /* GamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C381B8861D77D9F000861B90 /* GamesViewController.m */; };
 		C381B8A01D77DA0F00861B90 /* FastCountApi.m in Sources */ = {isa = PBXBuildFile; fileRef = C381B88E1D77DA0F00861B90 /* FastCountApi.m */; };
 		C381B8A11D77DA0F00861B90 /* FastCountProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C381B8911D77DA0F00861B90 /* FastCountProtocol.m */; };
 		C381B8A21D77DA0F00861B90 /* FastCountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C381B8941D77DA0F00861B90 /* FastCountCell.m */; };
@@ -57,13 +72,23 @@
 		C3908E9D1D69B54400DDAD3C /* time1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3908E941D69B54400DDAD3C /* time1.png */; };
 		C3908E9E1D69B54400DDAD3C /* time2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3908E951D69B54400DDAD3C /* time2.png */; };
 		C3908E9F1D69B54400DDAD3C /* time3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3908E961D69B54400DDAD3C /* time3.png */; };
-		C3B5F6AA1D6D788D00BA5D3B /* MemonryController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B5F6A91D6D788D00BA5D3B /* MemonryController.m */; };
-		C3B5F6AD1D6D79D700BA5D3B /* MemonryNumsView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B5F6AC1D6D79D700BA5D3B /* MemonryNumsView.m */; };
-		C3B7E2541D77F5AA0033B9E7 /* MemonryApi.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B7E2531D77F5AA0033B9E7 /* MemonryApi.m */; };
-		C3B7E2641D77FC890033B9E7 /* MemonryProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B7E2631D77FC890033B9E7 /* MemonryProtocol.m */; };
+		C3ACF73C1D9155390015F3C8 /* ForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3ACF73B1D9155390015F3C8 /* ForgetViewController.m */; };
+		C3ACF73F1D91554B0015F3C8 /* ForgetPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3ACF73E1D91554B0015F3C8 /* ForgetPasswordView.m */; };
+		C3ACF7411D91555B0015F3C8 /* ForgetPasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3ACF7401D91555B0015F3C8 /* ForgetPasswordView.xib */; };
 		C3B7E26B1D7800DD0033B9E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B7E2671D7800DD0033B9E7 /* AppDelegate.m */; };
 		C3B7E26C1D7800DD0033B9E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B7E2681D7800DD0033B9E7 /* Main.storyboard */; };
-		C3B7E26F1D7805B80033B9E7 /* CustomController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B7E26E1D7805B80033B9E7 /* CustomController.m */; };
+		C3B9358E1D8FF20C0057431F /* MyLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B9358D1D8FF20C0057431F /* MyLoginView.m */; };
+		C3B935901D8FF2160057431F /* MyLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B9358F1D8FF2160057431F /* MyLoginView.xib */; };
+		C3BFE9061D90CAD1002EB036 /* MyRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BFE9051D90CAD1002EB036 /* MyRegisterView.m */; };
+		C3BFE9081D90CAE0002EB036 /* MyRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3BFE9071D90CAE0002EB036 /* MyRegisterView.xib */; };
+		C3C7316C1D9264760026014B /* cart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C7316A1D9264760026014B /* cart@2x.png */; };
+		C3C7316D1D9264760026014B /* center@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C7316B1D9264760026014B /* center@2x.png */; };
+		C3EF6A2C1D90D04300AD376B /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EF6A2B1D90D04300AD376B /* RegisterViewController.m */; };
+		C3F18D351D86AE3400B08CC2 /* tap.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F18D341D86AE3400B08CC2 /* tap.png */; };
+		C3F50F0B1D925E8100E5F754 /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F50F0A1D925E8100E5F754 /* CommonViewController.m */; };
+		C3F50F111D925EF000E5F754 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F50F101D925EF000E5F754 /* SecondViewController.m */; };
+		C3F50F141D925EFC00E5F754 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F50F131D925EFC00E5F754 /* ThirdViewController.m */; };
+		C3F50F171D925F0500E5F754 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F50F161D925F0500E5F754 /* FourViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,9 +109,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2F3F498FA7446CF1FAD2C7B8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		31C90C3A4258030E0DCB7CE0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		66A61285C8CB7235F6CD55F5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		07989F9B1FFA7292DBC9770B /* Pods-KillBrain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KillBrain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KillBrain/Pods-KillBrain.debug.xcconfig"; sourceTree = "<group>"; };
+		C30F2AA31D92241600C8E3B3 /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		C30F2AA41D92241600C8E3B3 /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
+		C30F2AA61D92250100C8E3B3 /* GuideLoadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideLoadView.h; sourceTree = "<group>"; };
+		C30F2AA71D92250100C8E3B3 /* GuideLoadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideLoadView.m; sourceTree = "<group>"; };
+		C30F2AA91D92252100C8E3B3 /* GuideLoadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuideLoadView.xib; sourceTree = "<group>"; };
+		C30F2AAB1D922ED200C8E3B3 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		C3105EAB1D925C17001878DB /* KLTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KLTabBarViewController.h; path = KillBrain/Category/KLTabBarViewController.h; sourceTree = SOURCE_ROOT; };
+		C3105EAC1D925C17001878DB /* KLTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KLTabBarViewController.m; path = KillBrain/Category/KLTabBarViewController.m; sourceTree = SOURCE_ROOT; };
+		C3105EAD1D925C17001878DB /* UITabBar+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITabBar+Swizzling.h"; path = "../UITabBar+Swizzling.h"; sourceTree = "<group>"; };
+		C3105EAE1D925C17001878DB /* UITabBar+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITabBar+Swizzling.m"; path = "../UITabBar+Swizzling.m"; sourceTree = "<group>"; };
+		C3105EAF1D925C17001878DB /* UIViewController+KKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+KKExtension.h"; path = "../UIViewController+KKExtension.h"; sourceTree = "<group>"; };
+		C3105EB01D925C17001878DB /* UIViewController+KKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+KKExtension.m"; path = "../UIViewController+KKExtension.m"; sourceTree = "<group>"; };
+		C31DA43C1D937DCE00B1F3B6 /* gu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gu.mp3; sourceTree = "<group>"; };
 		C32684621D68641300E1BAA6 /* KillBrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KillBrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32684661D68641300E1BAA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C32684711D68641300E1BAA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,15 +140,29 @@
 		C32684A91D686B1000E1BAA6 /* KKView+KKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KKView+KKExtension.m"; sourceTree = "<group>"; };
 		C32684AA1D686B1000E1BAA6 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		C32684AB1D686B1000E1BAA6 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
-		C32C9A291D766E800040863D /* WordsLinkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordsLinkController.h; sourceTree = "<group>"; };
-		C32C9A2A1D766E800040863D /* WordsLinkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordsLinkController.m; sourceTree = "<group>"; };
-		C32C9A2C1D7675350040863D /* WordsMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordsMainView.h; sourceTree = "<group>"; };
-		C32C9A2D1D7675350040863D /* WordsMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordsMainView.m; sourceTree = "<group>"; };
 		C33AA25C1D6AA4B9002BE484 /* log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = log.png; sourceTree = "<group>"; };
-		C381B8731D77CBBE00861B90 /* WordsLinkProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordsLinkProtocol.h; sourceTree = "<group>"; };
-		C381B8741D77CBBE00861B90 /* WordsLinkProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordsLinkProtocol.m; sourceTree = "<group>"; };
-		C381B8761D77CD1100861B90 /* WordsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordsApi.h; sourceTree = "<group>"; };
-		C381B8771D77CD1100861B90 /* WordsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordsApi.m; sourceTree = "<group>"; };
+		C33D5AF11D929B15007185E6 /* MemonryApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemonryApi.h; sourceTree = "<group>"; };
+		C33D5AF21D929B15007185E6 /* MemonryApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemonryApi.m; sourceTree = "<group>"; };
+		C33D5AF41D929B15007185E6 /* MemonryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemonryController.h; sourceTree = "<group>"; };
+		C33D5AF51D929B15007185E6 /* MemonryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemonryController.m; sourceTree = "<group>"; };
+		C33D5AF71D929B15007185E6 /* MemonryNumsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemonryNumsView.h; sourceTree = "<group>"; };
+		C33D5AF81D929B15007185E6 /* MemonryNumsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemonryNumsView.m; sourceTree = "<group>"; };
+		C33D5AFB1D929B15007185E6 /* WordsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordsApi.h; sourceTree = "<group>"; };
+		C33D5AFC1D929B15007185E6 /* WordsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordsApi.m; sourceTree = "<group>"; };
+		C33D5AFE1D929B15007185E6 /* WordsLinkProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordsLinkProtocol.h; sourceTree = "<group>"; };
+		C33D5AFF1D929B15007185E6 /* WordsLinkProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordsLinkProtocol.m; sourceTree = "<group>"; };
+		C33D5B011D929B15007185E6 /* WordsMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordsMainView.h; sourceTree = "<group>"; };
+		C33D5B021D929B15007185E6 /* WordsMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordsMainView.m; sourceTree = "<group>"; };
+		C33D5B041D929B15007185E6 /* WordsLinkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordsLinkController.h; sourceTree = "<group>"; };
+		C33D5B051D929B15007185E6 /* WordsLinkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordsLinkController.m; sourceTree = "<group>"; };
+		C33D5B0F1D929B4B007185E6 /* CustomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomController.h; sourceTree = "<group>"; };
+		C33D5B101D929B4B007185E6 /* CustomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomController.m; sourceTree = "<group>"; };
+		C33D5B121D929B4B007185E6 /* HandSpeedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandSpeedView.h; sourceTree = "<group>"; };
+		C33D5B131D929B4B007185E6 /* HandSpeedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandSpeedView.m; sourceTree = "<group>"; };
+		C33D5B161D929BDF007185E6 /* MemonryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemonryProtocol.h; sourceTree = "<group>"; };
+		C33D5B171D929BDF007185E6 /* MemonryProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemonryProtocol.m; sourceTree = "<group>"; };
+		C34934071D8FE0680004F730 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C34934081D8FE0680004F730 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		C381B87D1D77D99E00861B90 /* MainViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewProtocol.h; sourceTree = "<group>"; };
 		C381B87E1D77D99E00861B90 /* MainViewProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewProtocol.m; sourceTree = "<group>"; };
 		C381B8801D77D9F000861B90 /* MainShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainShowView.h; path = KillBrain/MainShowView.h; sourceTree = SOURCE_ROOT; };
@@ -120,8 +170,8 @@
 		C381B8821D77D9F000861B90 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainTableViewCell.h; path = KillBrain/MainTableViewCell.h; sourceTree = SOURCE_ROOT; };
 		C381B8831D77D9F000861B90 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTableViewCell.m; path = KillBrain/MainTableViewCell.m; sourceTree = SOURCE_ROOT; };
 		C381B8841D77D9F000861B90 /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainTableViewCell.xib; path = KillBrain/MainTableViewCell.xib; sourceTree = SOURCE_ROOT; };
-		C381B8851D77D9F000861B90 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = KillBrain/MainViewController.h; sourceTree = SOURCE_ROOT; };
-		C381B8861D77D9F000861B90 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = KillBrain/MainViewController.m; sourceTree = SOURCE_ROOT; };
+		C381B8851D77D9F000861B90 /* GamesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamesViewController.h; path = KillBrain/GamesViewController.h; sourceTree = SOURCE_ROOT; };
+		C381B8861D77D9F000861B90 /* GamesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GamesViewController.m; path = KillBrain/GamesViewController.m; sourceTree = SOURCE_ROOT; };
 		C381B88D1D77DA0F00861B90 /* FastCountApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastCountApi.h; sourceTree = "<group>"; };
 		C381B88E1D77DA0F00861B90 /* FastCountApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastCountApi.m; sourceTree = "<group>"; };
 		C381B8901D77DA0F00861B90 /* FastCountProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastCountProtocol.h; sourceTree = "<group>"; };
@@ -170,21 +220,37 @@
 		C3908E941D69B54400DDAD3C /* time1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time1.png; sourceTree = "<group>"; };
 		C3908E951D69B54400DDAD3C /* time2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time2.png; sourceTree = "<group>"; };
 		C3908E961D69B54400DDAD3C /* time3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time3.png; sourceTree = "<group>"; };
-		C3B5F6A81D6D788D00BA5D3B /* MemonryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemonryController.h; sourceTree = "<group>"; };
-		C3B5F6A91D6D788D00BA5D3B /* MemonryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemonryController.m; sourceTree = "<group>"; };
-		C3B5F6AB1D6D79D700BA5D3B /* MemonryNumsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemonryNumsView.h; sourceTree = "<group>"; };
-		C3B5F6AC1D6D79D700BA5D3B /* MemonryNumsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemonryNumsView.m; sourceTree = "<group>"; };
-		C3B7E2521D77F5AA0033B9E7 /* MemonryApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemonryApi.h; sourceTree = "<group>"; };
-		C3B7E2531D77F5AA0033B9E7 /* MemonryApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemonryApi.m; sourceTree = "<group>"; };
-		C3B7E2621D77FC890033B9E7 /* MemonryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemonryProtocol.h; path = KillBrain/Memorny/Api/MemonryProtocol.h; sourceTree = SOURCE_ROOT; };
-		C3B7E2631D77FC890033B9E7 /* MemonryProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MemonryProtocol.m; path = KillBrain/Memorny/Api/MemonryProtocol.m; sourceTree = SOURCE_ROOT; };
+		C3ACF73A1D9155390015F3C8 /* ForgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetViewController.h; sourceTree = "<group>"; };
+		C3ACF73B1D9155390015F3C8 /* ForgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetViewController.m; sourceTree = "<group>"; };
+		C3ACF73D1D91554B0015F3C8 /* ForgetPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordView.h; sourceTree = "<group>"; };
+		C3ACF73E1D91554B0015F3C8 /* ForgetPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordView.m; sourceTree = "<group>"; };
+		C3ACF7401D91555B0015F3C8 /* ForgetPasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgetPasswordView.xib; sourceTree = "<group>"; };
 		C3B7E2661D7800DD0033B9E7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3B7E2671D7800DD0033B9E7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C3B7E2681D7800DD0033B9E7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C3B7E2691D7800DD0033B9E7 /* CommonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
 		C3B7E26A1D7800DD0033B9E7 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		C3B7E26D1D7805B80033B9E7 /* CustomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomController.h; sourceTree = "<group>"; };
-		C3B7E26E1D7805B80033B9E7 /* CustomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomController.m; sourceTree = "<group>"; };
+		C3B9358C1D8FF20C0057431F /* MyLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLoginView.h; sourceTree = "<group>"; };
+		C3B9358D1D8FF20C0057431F /* MyLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLoginView.m; sourceTree = "<group>"; };
+		C3B9358F1D8FF2160057431F /* MyLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyLoginView.xib; sourceTree = "<group>"; };
+		C3BFE9041D90CAD1002EB036 /* MyRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRegisterView.h; sourceTree = "<group>"; };
+		C3BFE9051D90CAD1002EB036 /* MyRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRegisterView.m; sourceTree = "<group>"; };
+		C3BFE9071D90CAE0002EB036 /* MyRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyRegisterView.xib; sourceTree = "<group>"; };
+		C3C7316A1D9264760026014B /* cart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart@2x.png"; sourceTree = "<group>"; };
+		C3C7316B1D9264760026014B /* center@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "center@2x.png"; sourceTree = "<group>"; };
+		C3EF6A2A1D90D04300AD376B /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		C3EF6A2B1D90D04300AD376B /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		C3F18D341D86AE3400B08CC2 /* tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tap.png; sourceTree = "<group>"; };
+		C3F50F091D925E8100E5F754 /* CommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonViewController.h; sourceTree = "<group>"; };
+		C3F50F0A1D925E8100E5F754 /* CommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonViewController.m; sourceTree = "<group>"; };
+		C3F50F0F1D925EF000E5F754 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		C3F50F101D925EF000E5F754 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		C3F50F121D925EFC00E5F754 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		C3F50F131D925EFC00E5F754 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		C3F50F151D925F0500E5F754 /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		C3F50F161D925F0500E5F754 /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
+		C9B8A2D23525DD68D138781C /* Pods-KillBrain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KillBrain.release.xcconfig"; path = "Pods/Target Support Files/Pods-KillBrain/Pods-KillBrain.release.xcconfig"; sourceTree = "<group>"; };
+		CC040A49748DB92C2FF4EC93 /* libPods-KillBrain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KillBrain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,7 +258,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A2A22ED077064B811980A57 /* libPods.a in Frameworks */,
+				138DF48C2BC2A7DBD4641DD3 /* libPods-KillBrain.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,13 +279,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C2D38553037633CE3E7E8441 /* Pods */ = {
+		69996C78577341E6E9B75DCB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				66A61285C8CB7235F6CD55F5 /* Pods.debug.xcconfig */,
-				31C90C3A4258030E0DCB7CE0 /* Pods.release.xcconfig */,
+				07989F9B1FFA7292DBC9770B /* Pods-KillBrain.debug.xcconfig */,
+				C9B8A2D23525DD68D138781C /* Pods-KillBrain.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C30F2AA21D9223F400C8E3B3 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				C30F2AA31D92241600C8E3B3 /* GuideViewController.h */,
+				C30F2AA41D92241600C8E3B3 /* GuideViewController.m */,
+				C30F2AA61D92250100C8E3B3 /* GuideLoadView.h */,
+				C30F2AA71D92250100C8E3B3 /* GuideLoadView.m */,
+				C30F2AA91D92252100C8E3B3 /* GuideLoadView.xib */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		C3105EB41D925CDC001878DB /* KLTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C3105EAB1D925C17001878DB /* KLTabBarViewController.h */,
+				C3105EAC1D925C17001878DB /* KLTabBarViewController.m */,
+				C3105EAD1D925C17001878DB /* UITabBar+Swizzling.h */,
+				C3105EAE1D925C17001878DB /* UITabBar+Swizzling.m */,
+				C3105EAF1D925C17001878DB /* UIViewController+KKExtension.h */,
+				C3105EB01D925C17001878DB /* UIViewController+KKExtension.m */,
+			);
+			path = KLTabBar;
 			sourceTree = "<group>";
 		};
 		C32684591D68641300E1BAA6 = {
@@ -229,8 +320,8 @@
 				C326847E1D68641300E1BAA6 /* KillBrainTests */,
 				C32684891D68641300E1BAA6 /* KillBrainUITests */,
 				C32684631D68641300E1BAA6 /* Products */,
-				C2D38553037633CE3E7E8441 /* Pods */,
-				FC46B5A375D20361C9808372 /* Frameworks */,
+				69996C78577341E6E9B75DCB /* Pods */,
+				D1845CA39C7F15ED0D580ADC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -247,12 +338,15 @@
 		C32684641D68641300E1BAA6 /* KillBrain */ = {
 			isa = PBXGroup;
 			children = (
+				C3F50F081D925E7100E5F754 /* Common */,
+				C30F2AA21D9223F400C8E3B3 /* Guide */,
+				C34934061D8FE05A0004F730 /* Login */,
 				C3B7E2551D77F9960033B9E7 /* Other */,
 				C3908E8D1D69B54400DDAD3C /* images */,
 				C32684BC1D68760F00E1BAA6 /* Home */,
-				C3B5F6A31D6D786D00BA5D3B /* Memorny */,
-				C32C9A241D766E6A0040863D /* WordsLink */,
-				C3B7E25D1D77FBED0033B9E7 /* Custom */,
+				C3F50F0C1D925EC700E5F754 /* Second */,
+				C3F50F0D1D925ED300E5F754 /* Third */,
+				C3F50F0E1D925EE100E5F754 /* Four */,
 				C32684A51D686B0700E1BAA6 /* Category */,
 				C32684711D68641300E1BAA6 /* Assets.xcassets */,
 				C32684731D68641300E1BAA6 /* LaunchScreen.storyboard */,
@@ -291,6 +385,7 @@
 		C32684A51D686B0700E1BAA6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				C3105EB41D925CDC001878DB /* KLTabBar */,
 				C32684A61D686B1000E1BAA6 /* KKView+Common.h */,
 				C32684A71D686B1000E1BAA6 /* KKView+Common.m */,
 				C32684A81D686B1000E1BAA6 /* KKView+KKExtension.h */,
@@ -304,6 +399,9 @@
 		C32684BC1D68760F00E1BAA6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C33D5B0D1D929B4B007185E6 /* Custom */,
+				C33D5AEF1D929B15007185E6 /* Memorny */,
+				C33D5AF91D929B15007185E6 /* WordsLink */,
 				C381B8CD1D77E01400861B90 /* Main */,
 				C381B8A81D77DA3300861B90 /* Result */,
 				C381B8B21D77DA3300861B90 /* Testing */,
@@ -312,51 +410,142 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		C32C9A241D766E6A0040863D /* WordsLink */ = {
+		C33D5AEF1D929B15007185E6 /* Memorny */ = {
 			isa = PBXGroup;
 			children = (
-				C32C9A251D766E6A0040863D /* Api */,
-				C32C9A261D766E6A0040863D /* Protocol */,
-				C32C9A271D766E6A0040863D /* View */,
-				C32C9A281D766E6A0040863D /* ViewController */,
+				C33D5AF01D929B15007185E6 /* Api */,
+				C33D5AF31D929B15007185E6 /* Controller */,
+				C33D5AF61D929B15007185E6 /* View */,
 			);
-			path = WordsLink;
-			sourceTree = "<group>";
+			name = Memorny;
+			path = KillBrain/Memorny;
+			sourceTree = SOURCE_ROOT;
 		};
-		C32C9A251D766E6A0040863D /* Api */ = {
+		C33D5AF01D929B15007185E6 /* Api */ = {
 			isa = PBXGroup;
 			children = (
-				C381B8761D77CD1100861B90 /* WordsApi.h */,
-				C381B8771D77CD1100861B90 /* WordsApi.m */,
+				C33D5B161D929BDF007185E6 /* MemonryProtocol.h */,
+				C33D5B171D929BDF007185E6 /* MemonryProtocol.m */,
+				C33D5AF11D929B15007185E6 /* MemonryApi.h */,
+				C33D5AF21D929B15007185E6 /* MemonryApi.m */,
 			);
 			path = Api;
 			sourceTree = "<group>";
 		};
-		C32C9A261D766E6A0040863D /* Protocol */ = {
+		C33D5AF31D929B15007185E6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C381B8731D77CBBE00861B90 /* WordsLinkProtocol.h */,
-				C381B8741D77CBBE00861B90 /* WordsLinkProtocol.m */,
+				C33D5AF41D929B15007185E6 /* MemonryController.h */,
+				C33D5AF51D929B15007185E6 /* MemonryController.m */,
 			);
-			path = Protocol;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		C32C9A271D766E6A0040863D /* View */ = {
+		C33D5AF61D929B15007185E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C32C9A2C1D7675350040863D /* WordsMainView.h */,
-				C32C9A2D1D7675350040863D /* WordsMainView.m */,
+				C33D5AF71D929B15007185E6 /* MemonryNumsView.h */,
+				C33D5AF81D929B15007185E6 /* MemonryNumsView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		C32C9A281D766E6A0040863D /* ViewController */ = {
+		C33D5AF91D929B15007185E6 /* WordsLink */ = {
 			isa = PBXGroup;
 			children = (
-				C32C9A291D766E800040863D /* WordsLinkController.h */,
-				C32C9A2A1D766E800040863D /* WordsLinkController.m */,
+				C33D5AFA1D929B15007185E6 /* Api */,
+				C33D5AFD1D929B15007185E6 /* Protocol */,
+				C33D5B001D929B15007185E6 /* View */,
+				C33D5B031D929B15007185E6 /* ViewController */,
+			);
+			name = WordsLink;
+			path = KillBrain/WordsLink;
+			sourceTree = SOURCE_ROOT;
+		};
+		C33D5AFA1D929B15007185E6 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				C33D5AFB1D929B15007185E6 /* WordsApi.h */,
+				C33D5AFC1D929B15007185E6 /* WordsApi.m */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		C33D5AFD1D929B15007185E6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C33D5AFE1D929B15007185E6 /* WordsLinkProtocol.h */,
+				C33D5AFF1D929B15007185E6 /* WordsLinkProtocol.m */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		C33D5B001D929B15007185E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C33D5B011D929B15007185E6 /* WordsMainView.h */,
+				C33D5B021D929B15007185E6 /* WordsMainView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C33D5B031D929B15007185E6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C33D5B041D929B15007185E6 /* WordsLinkController.h */,
+				C33D5B051D929B15007185E6 /* WordsLinkController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C33D5B0D1D929B4B007185E6 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				C33D5B0E1D929B4B007185E6 /* Controller */,
+				C33D5B111D929B4B007185E6 /* View */,
+			);
+			name = Custom;
+			path = KillBrain/Custom;
+			sourceTree = SOURCE_ROOT;
+		};
+		C33D5B0E1D929B4B007185E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C33D5B0F1D929B4B007185E6 /* CustomController.h */,
+				C33D5B101D929B4B007185E6 /* CustomController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C33D5B111D929B4B007185E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C33D5B121D929B4B007185E6 /* HandSpeedView.h */,
+				C33D5B131D929B4B007185E6 /* HandSpeedView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C34934061D8FE05A0004F730 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C34934071D8FE0680004F730 /* LoginViewController.h */,
+				C34934081D8FE0680004F730 /* LoginViewController.m */,
+				C3EF6A2A1D90D04300AD376B /* RegisterViewController.h */,
+				C3EF6A2B1D90D04300AD376B /* RegisterViewController.m */,
+				C3ACF73A1D9155390015F3C8 /* ForgetViewController.h */,
+				C3ACF73B1D9155390015F3C8 /* ForgetViewController.m */,
+				C3ACF73D1D91554B0015F3C8 /* ForgetPasswordView.h */,
+				C3ACF73E1D91554B0015F3C8 /* ForgetPasswordView.m */,
+				C3ACF7401D91555B0015F3C8 /* ForgetPasswordView.xib */,
+				C3B9358C1D8FF20C0057431F /* MyLoginView.h */,
+				C3B9358D1D8FF20C0057431F /* MyLoginView.m */,
+				C3B9358F1D8FF2160057431F /* MyLoginView.xib */,
+				C3BFE9041D90CAD1002EB036 /* MyRegisterView.h */,
+				C3BFE9051D90CAD1002EB036 /* MyRegisterView.m */,
+				C3BFE9071D90CAE0002EB036 /* MyRegisterView.xib */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		C381B87C1D77D99E00861B90 /* Protocol */ = {
@@ -522,8 +711,8 @@
 		C381B8CE1D77E01400861B90 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C381B8851D77D9F000861B90 /* MainViewController.h */,
-				C381B8861D77D9F000861B90 /* MainViewController.m */,
+				C381B8851D77D9F000861B90 /* GamesViewController.h */,
+				C381B8861D77D9F000861B90 /* GamesViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -543,6 +732,11 @@
 		C3908E8D1D69B54400DDAD3C /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C31DA43C1D937DCE00B1F3B6 /* gu.mp3 */,
+				C3C7316A1D9264760026014B /* cart@2x.png */,
+				C3C7316B1D9264760026014B /* center@2x.png */,
+				C30F2AAB1D922ED200C8E3B3 /* bg.png */,
+				C3F18D341D86AE3400B08CC2 /* tap.png */,
 				C38F91991D6C534000DAB78B /* alpha@2x.png */,
 				C38F919A1D6C534000DAB78B /* snow@2x.png */,
 				C38F914D1D6C293D00DAB78B /* FFRing.png */,
@@ -561,53 +755,6 @@
 			path = images;
 			sourceTree = "<group>";
 		};
-		C3B5F6A31D6D786D00BA5D3B /* Memorny */ = {
-			isa = PBXGroup;
-			children = (
-				C3B7E2511D77F59E0033B9E7 /* Api */,
-				C3B5F6A51D6D786D00BA5D3B /* Controller */,
-				C3B5F6A61D6D786D00BA5D3B /* Protocol */,
-				C3B5F6A71D6D786D00BA5D3B /* View */,
-			);
-			path = Memorny;
-			sourceTree = "<group>";
-		};
-		C3B5F6A51D6D786D00BA5D3B /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				C3B5F6A81D6D788D00BA5D3B /* MemonryController.h */,
-				C3B5F6A91D6D788D00BA5D3B /* MemonryController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		C3B5F6A61D6D786D00BA5D3B /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				C3B7E2621D77FC890033B9E7 /* MemonryProtocol.h */,
-				C3B7E2631D77FC890033B9E7 /* MemonryProtocol.m */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		C3B5F6A71D6D786D00BA5D3B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C3B5F6AB1D6D79D700BA5D3B /* MemonryNumsView.h */,
-				C3B5F6AC1D6D79D700BA5D3B /* MemonryNumsView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C3B7E2511D77F59E0033B9E7 /* Api */ = {
-			isa = PBXGroup;
-			children = (
-				C3B7E2521D77F5AA0033B9E7 /* MemonryApi.h */,
-				C3B7E2531D77F5AA0033B9E7 /* MemonryApi.m */,
-			);
-			path = Api;
-			sourceTree = "<group>";
-		};
 		C3B7E2551D77F9960033B9E7 /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -620,51 +767,46 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		C3B7E25D1D77FBED0033B9E7 /* Custom */ = {
+		C3F50F081D925E7100E5F754 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				C3B7E2611D77FC230033B9E7 /* Api */,
-				C3B7E2601D77FC190033B9E7 /* Protocol */,
-				C3B7E25F1D77FC0C0033B9E7 /* View */,
-				C3B7E25E1D77FBFF0033B9E7 /* Controller */,
+				C3F50F091D925E8100E5F754 /* CommonViewController.h */,
+				C3F50F0A1D925E8100E5F754 /* CommonViewController.m */,
 			);
-			path = Custom;
+			path = Common;
 			sourceTree = "<group>";
 		};
-		C3B7E25E1D77FBFF0033B9E7 /* Controller */ = {
+		C3F50F0C1D925EC700E5F754 /* Second */ = {
 			isa = PBXGroup;
 			children = (
-				C3B7E26D1D7805B80033B9E7 /* CustomController.h */,
-				C3B7E26E1D7805B80033B9E7 /* CustomController.m */,
+				C3F50F0F1D925EF000E5F754 /* SecondViewController.h */,
+				C3F50F101D925EF000E5F754 /* SecondViewController.m */,
 			);
-			path = Controller;
+			path = Second;
 			sourceTree = "<group>";
 		};
-		C3B7E25F1D77FC0C0033B9E7 /* View */ = {
+		C3F50F0D1D925ED300E5F754 /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				C3F50F121D925EFC00E5F754 /* ThirdViewController.h */,
+				C3F50F131D925EFC00E5F754 /* ThirdViewController.m */,
 			);
-			path = View;
+			path = Third;
 			sourceTree = "<group>";
 		};
-		C3B7E2601D77FC190033B9E7 /* Protocol */ = {
+		C3F50F0E1D925EE100E5F754 /* Four */ = {
 			isa = PBXGroup;
 			children = (
+				C3F50F151D925F0500E5F754 /* FourViewController.h */,
+				C3F50F161D925F0500E5F754 /* FourViewController.m */,
 			);
-			path = Protocol;
+			path = Four;
 			sourceTree = "<group>";
 		};
-		C3B7E2611D77FC230033B9E7 /* Api */ = {
+		D1845CA39C7F15ED0D580ADC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Api;
-			sourceTree = "<group>";
-		};
-		FC46B5A375D20361C9808372 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2F3F498FA7446CF1FAD2C7B8 /* libPods.a */,
+				CC040A49748DB92C2FF4EC93 /* libPods-KillBrain.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -676,12 +818,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C326848F1D68641300E1BAA6 /* Build configuration list for PBXNativeTarget "KillBrain" */;
 			buildPhases = (
-				186BBB89342DB01EEE9ECEB6 /* Check Pods Manifest.lock */,
+				13427485F897CDE7218B8017 /* [CP] Check Pods Manifest.lock */,
 				C326845E1D68641300E1BAA6 /* Sources */,
 				C326845F1D68641300E1BAA6 /* Frameworks */,
 				C32684601D68641300E1BAA6 /* Resources */,
-				A92089F51CEA341D058931E2 /* Embed Pods Frameworks */,
-				F4A1780513F594DAB32B98F7 /* Copy Pods Resources */,
+				B2BA23A19AD532126655D2D0 /* [CP] Embed Pods Frameworks */,
+				1986F1B86B395D7E0BDEE9A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -739,6 +881,7 @@
 				TargetAttributes = {
 					C32684611D68641300E1BAA6 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = X342LX7QRW;
 					};
 					C326847A1D68641300E1BAA6 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -781,16 +924,25 @@
 				C3908E981D69B54400DDAD3C /* 2.jpg in Resources */,
 				C3908E971D69B54400DDAD3C /* 1.jpg in Resources */,
 				C38F91501D6C293D00DAB78B /* FFTspark.png in Resources */,
+				C3C7316D1D9264760026014B /* center@2x.png in Resources */,
 				C3908E9B1D69B54400DDAD3C /* go.png in Resources */,
 				C38F919B1D6C534000DAB78B /* alpha@2x.png in Resources */,
+				C3C7316C1D9264760026014B /* cart@2x.png in Resources */,
+				C3ACF7411D91555B0015F3C8 /* ForgetPasswordView.xib in Resources */,
 				C3908E9A1D69B54400DDAD3C /* 4.jpg in Resources */,
+				C3B935901D8FF2160057431F /* MyLoginView.xib in Resources */,
 				C381B8C81D77DA3300861B90 /* TestAnswerView.xib in Resources */,
+				C3BFE9081D90CAE0002EB036 /* MyRegisterView.xib in Resources */,
 				C3908E9D1D69B54400DDAD3C /* time1.png in Resources */,
+				C3F18D351D86AE3400B08CC2 /* tap.png in Resources */,
+				C30F2AAA1D92252100C8E3B3 /* GuideLoadView.xib in Resources */,
 				C38F914F1D6C293D00DAB78B /* FFRing.png in Resources */,
 				C33AA25D1D6AA4B9002BE484 /* log.png in Resources */,
 				C381B8891D77D9F000861B90 /* MainTableViewCell.xib in Resources */,
 				C3908E9C1D69B54400DDAD3C /* time0.png in Resources */,
+				C30F2AAC1D922ED200C8E3B3 /* bg.png in Resources */,
 				C3908E9E1D69B54400DDAD3C /* time2.png in Resources */,
+				C31DA43D1D937DCE00B1F3B6 /* gu.mp3 in Resources */,
 				C3908E9F1D69B54400DDAD3C /* time3.png in Resources */,
 				C3B7E26C1D7800DD0033B9E7 /* Main.storyboard in Resources */,
 				C3908E991D69B54400DDAD3C /* 3.jpg in Resources */,
@@ -814,49 +966,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		186BBB89342DB01EEE9ECEB6 /* Check Pods Manifest.lock */ = {
+		13427485F897CDE7218B8017 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A92089F51CEA341D058931E2 /* Embed Pods Frameworks */ = {
+		1986F1B86B395D7E0BDEE9A0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KillBrain/Pods-KillBrain-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F4A1780513F594DAB32B98F7 /* Copy Pods Resources */ = {
+		B2BA23A19AD532126655D2D0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KillBrain/Pods-KillBrain-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -866,41 +1018,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C34934091D8FE0680004F730 /* LoginViewController.m in Sources */,
 				C381B8A61D77DA0F00861B90 /* SelectTimeView.m in Sources */,
+				C33D5B071D929B15007185E6 /* MemonryController.m in Sources */,
 				C381B8CA1D77DA3300861B90 /* TestShowView.m in Sources */,
 				C32684AC1D686B1000E1BAA6 /* KKView+Common.m in Sources */,
+				C33D5B141D929B4B007185E6 /* CustomController.m in Sources */,
 				C381B8C51D77DA3300861B90 /* WrongProtocol.m in Sources */,
-				C381B8751D77CBBE00861B90 /* WordsLinkProtocol.m in Sources */,
+				C3F50F141D925EFC00E5F754 /* ThirdViewController.m in Sources */,
 				C381B8C31D77DA3300861B90 /* WrongApi.m in Sources */,
+				C33D5B0B1D929B15007185E6 /* WordsMainView.m in Sources */,
 				C32684AD1D686B1000E1BAA6 /* KKView+KKExtension.m in Sources */,
+				C3BFE9061D90CAD1002EB036 /* MyRegisterView.m in Sources */,
+				C3105EB21D925C17001878DB /* UITabBar+Swizzling.m in Sources */,
 				C381B8A21D77DA0F00861B90 /* FastCountCell.m in Sources */,
-				C32C9A2E1D7675350040863D /* WordsMainView.m in Sources */,
 				C381B8A11D77DA0F00861B90 /* FastCountProtocol.m in Sources */,
 				C381B8871D77D9F000861B90 /* MainShowView.m in Sources */,
-				C3B7E2641D77FC890033B9E7 /* MemonryProtocol.m in Sources */,
-				C3B7E26F1D7805B80033B9E7 /* CustomController.m in Sources */,
+				C3B9358E1D8FF20C0057431F /* MyLoginView.m in Sources */,
+				C3105EB11D925C17001878DB /* KLTabBarViewController.m in Sources */,
+				C3F50F111D925EF000E5F754 /* SecondViewController.m in Sources */,
+				C3ACF73C1D9155390015F3C8 /* ForgetViewController.m in Sources */,
+				C3EF6A2C1D90D04300AD376B /* RegisterViewController.m in Sources */,
 				C381B8A71D77DA0F00861B90 /* FastCountController.m in Sources */,
+				C30F2AA81D92250100C8E3B3 /* GuideLoadView.m in Sources */,
+				C3ACF73F1D91554B0015F3C8 /* ForgetPasswordView.m in Sources */,
 				C381B8A51D77DA0F00861B90 /* SelectNum.m in Sources */,
 				C3B7E26B1D7800DD0033B9E7 /* AppDelegate.m in Sources */,
 				C381B8CC1D77DA3300861B90 /* TestViewController.m in Sources */,
+				C30F2AA51D92241600C8E3B3 /* GuideViewController.m in Sources */,
+				C3105EB31D925C17001878DB /* UIViewController+KKExtension.m in Sources */,
 				C381B8881D77D9F000861B90 /* MainTableViewCell.m in Sources */,
-				C3B5F6AA1D6D788D00BA5D3B /* MemonryController.m in Sources */,
+				C33D5B0A1D929B15007185E6 /* WordsLinkProtocol.m in Sources */,
 				C381B8C91D77DA3300861B90 /* TestCorrectView.m in Sources */,
-				C3B5F6AD1D6D79D700BA5D3B /* MemonryNumsView.m in Sources */,
 				C381B8A41D77DA0F00861B90 /* SelectMethod.m in Sources */,
-				C381B88A1D77D9F000861B90 /* MainViewController.m in Sources */,
+				C33D5B151D929B4B007185E6 /* HandSpeedView.m in Sources */,
+				C381B88A1D77D9F000861B90 /* GamesViewController.m in Sources */,
 				C381B8C71D77DA3300861B90 /* TestAnswerView.m in Sources */,
+				C33D5B061D929B15007185E6 /* MemonryApi.m in Sources */,
 				C32684671D68641300E1BAA6 /* main.m in Sources */,
 				C381B8A31D77DA0F00861B90 /* FastCountView.m in Sources */,
 				C381B8C41D77DA3300861B90 /* ResultController.m in Sources */,
-				C381B8781D77CD1100861B90 /* WordsApi.m in Sources */,
+				C33D5B0C1D929B15007185E6 /* WordsLinkController.m in Sources */,
 				C32684AE1D686B1000E1BAA6 /* UIImage+Extension.m in Sources */,
-				C32C9A2B1D766E800040863D /* WordsLinkController.m in Sources */,
+				C3F50F0B1D925E8100E5F754 /* CommonViewController.m in Sources */,
+				C33D5B091D929B15007185E6 /* WordsApi.m in Sources */,
+				C3F50F171D925F0500E5F754 /* FourViewController.m in Sources */,
+				C33D5B181D929BDF007185E6 /* MemonryProtocol.m in Sources */,
 				C381B8C61D77DA3300861B90 /* TestApi.m in Sources */,
 				C381B87F1D77D99E00861B90 /* MainViewProtocol.m in Sources */,
+				C33D5B081D929B15007185E6 /* MemonryNumsView.m in Sources */,
 				C381B8A01D77DA0F00861B90 /* FastCountApi.m in Sources */,
 				C381B8CB1D77DA3300861B90 /* TestWrongView.m in Sources */,
-				C3B7E2541D77F5AA0033B9E7 /* MemonryApi.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1031,9 +1199,10 @@
 		};
 		C32684901D68641300E1BAA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66A61285C8CB7235F6CD55F5 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 07989F9B1FFA7292DBC9770B /* Pods-KillBrain.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X342LX7QRW;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KillBrain/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = KillBrain/Info.plist;
@@ -1046,9 +1215,10 @@
 		};
 		C32684911D68641300E1BAA6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31C90C3A4258030E0DCB7CE0 /* Pods.release.xcconfig */;
+			baseConfigurationReference = C9B8A2D23525DD68D138781C /* Pods-KillBrain.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X342LX7QRW;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KillBrain/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = KillBrain/Info.plist;

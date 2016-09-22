@@ -7,50 +7,90 @@
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
+
+#import "GuideViewController.h"
+#import "CommonViewController.h"
+
 @interface AppDelegate ()
+@property (nonatomic, strong) GuideViewController *guideVC;
+@property (nonatomic, strong) CommonViewController *commonVC;
 
 @end
 
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  // 这个游戏蛮吊的！！！！
-  self.window = [[UIWindow alloc] init];
-  self.window.frame = [UIScreen mainScreen].bounds;
-  self.window.backgroundColor = [UIColor whiteColor];
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+  GuideViewController *guideVC = [[GuideViewController alloc] init];
+  CommonViewController *commonVC = [[CommonViewController alloc] init];
   
-  [self.window makeKeyAndVisible];
+  _guideVC = guideVC;
+  _commonVC = commonVC;
   
-  MainViewController *mainVc = [[MainViewController alloc] init];
-  UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mainVc];
-  self.window.rootViewController = nav;
+  [self loadWindow];
+  [self login];
+  
+  // LeanCloud
+  [AVOSCloud setApplicationId:@"SByqz6wT3QEg6cOrtuJKHN5s-gzGzoHsz" clientKey:@"w3MJt3xt8VuuSPNHdCy0D9yM"];
+  [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions]; // 跟踪应用被打开的情况
+
   return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-  // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-  // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+- (void)loadWindow
+{
+  self.window = [[UIWindow alloc] init];
+  self.window.frame = [UIScreen mainScreen].bounds;
+  self.window.backgroundColor = [UIColor whiteColor];
+  [self.window makeKeyAndVisible];
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-  // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-  // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+- (void)login
+{
+  [self loadADView];
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-  // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+- (void)loadADView
+{
+  self.window.rootViewController = _guideVC;
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hiddenADView) name:kKillBrainClickSkipADNotification object:nil];
   
-  NSLog(@"applicationWillEnterForeground");
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(timeOfShowADIsOver) name:kKillBrainSkipADTimerOverNotification object:nil];
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-  // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+- (void)hiddenADView
+{
+  [self hiddenGuideView];
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application {
-  // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+- (void)timeOfShowADIsOver
+{
+  [self hiddenGuideView];
 }
 
+- (void)hiddenGuideView
+{
+  dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(animationADDuration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    self.window.rootViewController = _commonVC;
+  });
+}
+
+- (BOOL)isFirstLogin
+{
+  BOOL firstLogin = [[NSUserDefaults standardUserDefaults] boolForKey:@"firstLogin"];
+  if (!firstLogin) {
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstLogin"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    return YES;
+  }
+  else {
+    return NO;
+  }
+}
+
+- (void)dealloc
+{
+  [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 @end

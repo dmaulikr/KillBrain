@@ -1,1 +1,14 @@
+
+
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target ‘KillBrain’ do
  pod 'SVProgressHUD-0.8.1', '~> 0.8'
+ pod ‘AVOSCloud’ 
+ pod ‘AVOSCloudIM’
+ pod ‘AVOSCloudCrashReporting’
+ pod 'ReactiveCocoa', '2.3.1'
+ pod 'Masonry'
+
+end

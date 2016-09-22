@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MainViewController.h"
+#import "GamesViewController.h"
 @interface MainViewProtocol : NSObject<UITableViewDataSource,UITableViewDelegate>
-@property (nonatomic, strong) MainViewController *viewController;
+@property (nonatomic, strong) GamesViewController *viewController;
 @end

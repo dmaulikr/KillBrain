@@ -13,6 +13,7 @@
 @interface WordsLinkController ()
 @property (nonatomic, strong) NSTimer *timer;
 @property (nonatomic, strong) NSMutableArray *selectDatas;
+@property (nonatomic, strong) NSMutableArray *words;
 @property (nonatomic, assign) NSInteger anwerTimer;
 @property (nonatomic, assign) BOOL  corrected;
 
@@ -86,7 +87,6 @@
   if (_anwerTimer <= 0) {
     [self hiddenTimer];
     _gameOver = YES;
-    _wordView.selectItemLabel.text = @"";
     [_wordView showContentLabel];
     _wordView.timerLabel.text = [NSString stringWithFormat:@"答题时间已经结束"];
     _wordView.contentLabel.text = _allWordsString;
@@ -98,7 +98,8 @@
 {
   NSString *item = self.datas[index];
   [self.selectDatas removeObject:item];
-  _wordView.selectItemLabel.text = [self.selectDatas componentsJoinedByString:@""];
+  [self.words removeObject:item];
+  _wordView.selectItemLabel.text = [self.words componentsJoinedByString:@""];
 }
 
 
@@ -106,7 +107,8 @@
 {
   NSString *item = self.datas[index];
   [self.selectDatas addObject:item];
-  _wordView.selectItemLabel.text = [self.selectDatas componentsJoinedByString:@""];
+  [self.words addObject:item];
+  _wordView.selectItemLabel.text = [self.words componentsJoinedByString:@""];
 
   if (self.selectDatas.count % 4 == 0) {
     NSMutableArray *arr = [NSMutableArray array];
@@ -118,8 +120,11 @@
     NSString *numStr = [arr componentsJoinedByString:@","];
     if ([[self.api resultApi] containsObject:numStr]) {
       self.corrected = YES;
+      _wordView.selectItemLabel.textColor = greenColor();
       dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         _wordView.selectItemLabel.text = @"";
+        _wordView.selectItemLabel.textColor = whiteColor();
+        [self.words removeAllObjects];
       });
       [_wordView reloadData];
     }
@@ -127,7 +132,11 @@
       self.corrected = NO;
     }
   }
-
+  
+  if (self.selectDatas.count == self.datas.count) {
+    _gameOver = YES;
+    [_timer invalidate];
+  }
 }
 
 - (BOOL)handleDatasWhenIsShowItemAtIndex:(NSInteger)index
@@ -182,4 +191,11 @@
   return _api;
 }
 
+- (NSMutableArray *)words
+{
+  if (!_words) {
+    _words = [NSMutableArray array];
+  }
+  return _words;
+}
 @end

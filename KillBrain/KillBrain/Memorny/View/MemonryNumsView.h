@@ -9,7 +9,6 @@
 
 #import <UIKit/UIKit.h>
 
-
 @class MemonryNumsView;
 @protocol MemonryNumsViewDelegate <NSObject>
 - (void)memonryView:(MemonryNumsView *)memonryView didSelectAtIndex:(NSInteger)index;
