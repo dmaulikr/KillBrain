@@ -23,7 +23,6 @@
     _line = [[UIView alloc] init];
     _line.backgroundColor = clearColor();
     
-    
     _tableView = [[UITableView alloc] init];
     _tableView.showsVerticalScrollIndicator = NO;
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;

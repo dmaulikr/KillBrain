@@ -49,8 +49,8 @@
   [super layoutSubviews];
   _timerLabel.frame = CGRectMake(10, 10, self.width - 20, 40);
   _tapCountLabel.frame = CGRectMake(self.width - 70, CGRectGetMaxY(_timerLabel.frame) + 10, 60, 60);
-  _tapDownButton.centerX = self.centerX;
-  _tapDownButton.centerY = self.centerY;
+  _tapDownButton.centerX = (self.width - _image.size.width)/2;
+  _tapDownButton.centerY = (self.height - _image.size.height)/2;
   _tapDownButton.width = _image.size.width;
   _tapDownButton.height = _image.size.height;
 }

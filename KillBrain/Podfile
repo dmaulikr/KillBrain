@@ -10,5 +10,5 @@ target ‘KillBrain’ do
  pod ‘AVOSCloudCrashReporting’
  pod 'ReactiveCocoa', '2.3.1'
  pod 'Masonry'
-
+ pod 'JSPatch'
 end

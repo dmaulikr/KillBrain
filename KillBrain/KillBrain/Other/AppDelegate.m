@@ -22,12 +22,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  
   GuideViewController *guideVC = [[GuideViewController alloc] init];
   CommonViewController *commonVC = [[CommonViewController alloc] init];
   
   _guideVC = guideVC;
   _commonVC = commonVC;
   
+  [self loadJSPatch];
   [self loadWindow];
   [self login];
   
@@ -54,9 +56,15 @@
 - (void)loadADView
 {
   self.window.rootViewController = _guideVC;
-  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hiddenADView) name:kKillBrainClickSkipADNotification object:nil];
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(hiddenADView)
+                                               name:kKillBrainClickSkipADNotification
+                                             object:nil];
   
-  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(timeOfShowADIsOver) name:kKillBrainSkipADTimerOverNotification object:nil];
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(timeOfShowADIsOver)
+                                               name:kKillBrainSkipADTimerOverNotification
+                                             object:nil];
 }
 
 - (void)hiddenADView
@@ -82,11 +90,24 @@
   if (!firstLogin) {
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstLogin"];
     [[NSUserDefaults standardUserDefaults] synchronize];
+    
     return YES;
   }
   else {
     return NO;
   }
+}
+
+- (void)loadJSPatch
+{
+#if TARGET_IPHONE_SIMULATOR
+  NSString *rootPath = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"projectPath"];
+#else
+  NSString *rootPath = [[NSBundle mainBundle] bundlePath];
+#endif
+  NSString *scriptRootPath = [rootPath stringByAppendingPathComponent:@"Other"];
+  NSString *mainScriptPath = [NSString stringWithFormat:@"%@/%@", scriptRootPath, @"/main.js"];
+  [JPEngine evaluateScriptWithPath:mainScriptPath];
 }
 
 - (void)dealloc

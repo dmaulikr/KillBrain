@@ -15,6 +15,8 @@
 		C3105EB11D925C17001878DB /* KLTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3105EAC1D925C17001878DB /* KLTabBarViewController.m */; };
 		C3105EB21D925C17001878DB /* UITabBar+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = C3105EAE1D925C17001878DB /* UITabBar+Swizzling.m */; };
 		C3105EB31D925C17001878DB /* UIViewController+KKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C3105EB01D925C17001878DB /* UIViewController+KKExtension.m */; };
+		C313661A1D94E06F00E3EF47 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = C31366191D94E06F00E3EF47 /* main.js */; };
+		C313661C1D9504A100E3EF47 /* JPTableViewController.js in Resources */ = {isa = PBXBuildFile; fileRef = C313661B1D9504A100E3EF47 /* JPTableViewController.js */; };
 		C31DA43D1D937DCE00B1F3B6 /* gu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C31DA43C1D937DCE00B1F3B6 /* gu.mp3 */; };
 		C32684671D68641300E1BAA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C32684661D68641300E1BAA6 /* main.m */; };
 		C32684721D68641300E1BAA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32684711D68641300E1BAA6 /* Assets.xcassets */; };
@@ -83,6 +85,7 @@
 		C3BFE9081D90CAE0002EB036 /* MyRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3BFE9071D90CAE0002EB036 /* MyRegisterView.xib */; };
 		C3C7316C1D9264760026014B /* cart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C7316A1D9264760026014B /* cart@2x.png */; };
 		C3C7316D1D9264760026014B /* center@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C7316B1D9264760026014B /* center@2x.png */; };
+		C3D100AC1D951CAE005D6BE8 /* JPTableView.js in Resources */ = {isa = PBXBuildFile; fileRef = C3D100AB1D951CAD005D6BE8 /* JPTableView.js */; };
 		C3EF6A2C1D90D04300AD376B /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EF6A2B1D90D04300AD376B /* RegisterViewController.m */; };
 		C3F18D351D86AE3400B08CC2 /* tap.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F18D341D86AE3400B08CC2 /* tap.png */; };
 		C3F50F0B1D925E8100E5F754 /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F50F0A1D925E8100E5F754 /* CommonViewController.m */; };
@@ -122,6 +125,8 @@
 		C3105EAE1D925C17001878DB /* UITabBar+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITabBar+Swizzling.m"; path = "../UITabBar+Swizzling.m"; sourceTree = "<group>"; };
 		C3105EAF1D925C17001878DB /* UIViewController+KKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+KKExtension.h"; path = "../UIViewController+KKExtension.h"; sourceTree = "<group>"; };
 		C3105EB01D925C17001878DB /* UIViewController+KKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+KKExtension.m"; path = "../UIViewController+KKExtension.m"; sourceTree = "<group>"; };
+		C31366191D94E06F00E3EF47 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		C313661B1D9504A100E3EF47 /* JPTableViewController.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JPTableViewController.js; sourceTree = "<group>"; };
 		C31DA43C1D937DCE00B1F3B6 /* gu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gu.mp3; sourceTree = "<group>"; };
 		C32684621D68641300E1BAA6 /* KillBrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KillBrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32684661D68641300E1BAA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -238,6 +243,7 @@
 		C3BFE9071D90CAE0002EB036 /* MyRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyRegisterView.xib; sourceTree = "<group>"; };
 		C3C7316A1D9264760026014B /* cart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart@2x.png"; sourceTree = "<group>"; };
 		C3C7316B1D9264760026014B /* center@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "center@2x.png"; sourceTree = "<group>"; };
+		C3D100AB1D951CAD005D6BE8 /* JPTableView.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JPTableView.js; sourceTree = "<group>"; };
 		C3EF6A2A1D90D04300AD376B /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		C3EF6A2B1D90D04300AD376B /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		C3F18D341D86AE3400B08CC2 /* tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tap.png; sourceTree = "<group>"; };
@@ -758,6 +764,9 @@
 		C3B7E2551D77F9960033B9E7 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C31366191D94E06F00E3EF47 /* main.js */,
+				C313661B1D9504A100E3EF47 /* JPTableViewController.js */,
+				C3D100AB1D951CAD005D6BE8 /* JPTableView.js */,
 				C3B7E2661D7800DD0033B9E7 /* AppDelegate.h */,
 				C3B7E2671D7800DD0033B9E7 /* AppDelegate.m */,
 				C3B7E2681D7800DD0033B9E7 /* Main.storyboard */,
@@ -929,6 +938,7 @@
 				C38F919B1D6C534000DAB78B /* alpha@2x.png in Resources */,
 				C3C7316C1D9264760026014B /* cart@2x.png in Resources */,
 				C3ACF7411D91555B0015F3C8 /* ForgetPasswordView.xib in Resources */,
+				C3D100AC1D951CAE005D6BE8 /* JPTableView.js in Resources */,
 				C3908E9A1D69B54400DDAD3C /* 4.jpg in Resources */,
 				C3B935901D8FF2160057431F /* MyLoginView.xib in Resources */,
 				C381B8C81D77DA3300861B90 /* TestAnswerView.xib in Resources */,
@@ -940,6 +950,8 @@
 				C33AA25D1D6AA4B9002BE484 /* log.png in Resources */,
 				C381B8891D77D9F000861B90 /* MainTableViewCell.xib in Resources */,
 				C3908E9C1D69B54400DDAD3C /* time0.png in Resources */,
+				C313661C1D9504A100E3EF47 /* JPTableViewController.js in Resources */,
+				C313661A1D94E06F00E3EF47 /* main.js in Resources */,
 				C30F2AAC1D922ED200C8E3B3 /* bg.png in Resources */,
 				C3908E9E1D69B54400DDAD3C /* time2.png in Resources */,
 				C31DA43D1D937DCE00B1F3B6 /* gu.mp3 in Resources */,

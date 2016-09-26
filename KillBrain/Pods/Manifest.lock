@@ -4,6 +4,9 @@ PODS:
     - AVOSCloud
   - AVOSCloudIM (3.3.5):
     - AVOSCloud
+  - JSPatch (1.1):
+    - JSPatch/Core (= 1.1)
+  - JSPatch/Core (1.1)
   - Masonry (1.0.1)
   - ReactiveCocoa (2.3.1):
     - ReactiveCocoa/UI (= 2.3.1)
@@ -18,6 +21,7 @@ DEPENDENCIES:
   - AVOSCloud
   - AVOSCloudCrashReporting
   - AVOSCloudIM
+  - JSPatch
   - Masonry
   - ReactiveCocoa (= 2.3.1)
   - SVProgressHUD-0.8.1 (~> 0.8)
@@ -26,10 +30,11 @@ SPEC CHECKSUMS:
   AVOSCloud: 1fe170768bee7e05bc3ea86e38d5bddb105cb957
   AVOSCloudCrashReporting: 7ad087db785a25d6ef03cb54c2c0b460eb32dabb
   AVOSCloudIM: dc307c48e951fcd861f4ae6db6d807e7b40639c8
+  JSPatch: ade285ad1d8f06146ed6054a39cef87509453299
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   ReactiveCocoa: 3fe9b233ca6db810e86681b5749488564c1179a1
   SVProgressHUD-0.8.1: ee9e6e58b5b5ffaf3f1a62c2dc409763470df143
 
-PODFILE CHECKSUM: d433cda33180f61f107bd726501dd58706f543f9
+PODFILE CHECKSUM: ccb44471eb6d8f4611c9f3af0f7c14ea10384215
 
 COCOAPODS: 1.1.0.beta.2

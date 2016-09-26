@@ -49,8 +49,8 @@
   _imageView.width  = self.width * 0.8;
   _imageView.height = self.width * 0.8;
   
-  _timeTipView.centerX = self.center.x;
-  _timeTipView.centerY = self.centerY - 64;
+  _timeTipView.centerX = (self.width - 100)/2;
+  _timeTipView.centerY = (self.height - 100)/2;
   _timeTipView.width  = 100;
   _timeTipView.height = 100;
   

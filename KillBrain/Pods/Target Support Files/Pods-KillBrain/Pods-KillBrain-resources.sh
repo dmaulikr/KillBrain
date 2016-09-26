@@ -80,9 +80,11 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "JSPatch/JSPatch/JSPatch.js"
   install_resource "SVProgressHUD-0.8.1/SVProgressHUD/SVProgressHUD.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "JSPatch/JSPatch/JSPatch.js"
   install_resource "SVProgressHUD-0.8.1/SVProgressHUD/SVProgressHUD.bundle"
 fi
 
