@@ -8,7 +8,8 @@
 
 #import "ThirdViewController.h"
 
-@interface ThirdViewController ()
+//#import "PDSearchHUD.h"
+@interface ThirdViewController () //<PDSearchHUDDelegate>
 
 @end
 
@@ -17,7 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
   self.view.backgroundColor = cyanColor();
-  self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"详情" style:UIBarButtonItemStyleDone target:self action:@selector(handleItem)];
+  self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"位置" style:UIBarButtonItemStyleDone target:self action:@selector(handleItem)];
+  
+
 }
 
 - (void)handleItem

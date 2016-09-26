@@ -11,4 +11,5 @@ target ‘KillBrain’ do
  pod 'ReactiveCocoa', '2.3.1'
  pod 'Masonry'
  pod 'JSPatch'
+ pod 'AMap2DMap'
 end

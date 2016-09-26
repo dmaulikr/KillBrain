@@ -7,23 +7,18 @@
 //
 
 #import "FourViewController.h"
-
-@interface FourViewController ()
-
+#import <MAMapKit/MAMapKit.h>
+@interface FourViewController ()<MAMapViewDelegate>
 @end
 
 @implementation FourViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
   
-
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    
-}
 
 
 @end

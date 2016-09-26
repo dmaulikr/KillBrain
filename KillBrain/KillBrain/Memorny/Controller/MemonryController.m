@@ -10,7 +10,8 @@
 #import "MemonryNumsView.h"
 #import "MemonryProtocol.h"
 #import "MemonryApi.h"
-@interface MemonryController ()
+#import <MAMapKit/MAMapKit.h>
+@interface MemonryController () //<MAMapViewDelegate>
 {
   CGFloat _originY;   // 此处虽然没有用到，但是写此变量的人对我意义重大，不可删除
 }

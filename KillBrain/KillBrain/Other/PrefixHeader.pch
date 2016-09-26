@@ -20,5 +20,6 @@
 #import "UIViewController+KKExtension.h"
 #import "KLTabBarViewController.h"
 #import <JSPatch/JPEngine.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
 
 #endif /* PrefixHeader_pch */

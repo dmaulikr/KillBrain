@@ -1,4 +1,7 @@
 PODS:
+  - AMap2DMap (4.2.0):
+    - AMapFoundation (~> 1.2)
+  - AMapFoundation (1.2.0)
   - AVOSCloud (3.3.5)
   - AVOSCloudCrashReporting (3.3.5):
     - AVOSCloud
@@ -18,6 +21,7 @@ PODS:
   - SVProgressHUD-0.8.1 (0.8)
 
 DEPENDENCIES:
+  - AMap2DMap
   - AVOSCloud
   - AVOSCloudCrashReporting
   - AVOSCloudIM
@@ -27,6 +31,8 @@ DEPENDENCIES:
   - SVProgressHUD-0.8.1 (~> 0.8)
 
 SPEC CHECKSUMS:
+  AMap2DMap: 82228a353bafa585f58c600bf7ee4687072b2e43
+  AMapFoundation: 8acc2bf4eed79aab4d21002ddb8b24a6f3f3621c
   AVOSCloud: 1fe170768bee7e05bc3ea86e38d5bddb105cb957
   AVOSCloudCrashReporting: 7ad087db785a25d6ef03cb54c2c0b460eb32dabb
   AVOSCloudIM: dc307c48e951fcd861f4ae6db6d807e7b40639c8
@@ -35,6 +41,6 @@ SPEC CHECKSUMS:
   ReactiveCocoa: 3fe9b233ca6db810e86681b5749488564c1179a1
   SVProgressHUD-0.8.1: ee9e6e58b5b5ffaf3f1a62c2dc409763470df143
 
-PODFILE CHECKSUM: ccb44471eb6d8f4611c9f3af0f7c14ea10384215
+PODFILE CHECKSUM: 8e63e222d438a9b26d51772433cbe4dd4c710c60
 
 COCOAPODS: 1.1.0.beta.2

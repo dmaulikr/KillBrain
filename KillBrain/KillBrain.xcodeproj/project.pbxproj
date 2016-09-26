@@ -74,6 +74,7 @@
 		C3908E9D1D69B54400DDAD3C /* time1.png in Resources */ = {isa = PBXBuildFile; fileRef = C3908E941D69B54400DDAD3C /* time1.png */; };
 		C3908E9E1D69B54400DDAD3C /* time2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3908E951D69B54400DDAD3C /* time2.png */; };
 		C3908E9F1D69B54400DDAD3C /* time3.png in Resources */ = {isa = PBXBuildFile; fileRef = C3908E961D69B54400DDAD3C /* time3.png */; };
+		C3A44AE71D98BECF00563994 /* Conmon.js in Resources */ = {isa = PBXBuildFile; fileRef = C3A44AE61D98BECF00563994 /* Conmon.js */; };
 		C3ACF73C1D9155390015F3C8 /* ForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3ACF73B1D9155390015F3C8 /* ForgetViewController.m */; };
 		C3ACF73F1D91554B0015F3C8 /* ForgetPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3ACF73E1D91554B0015F3C8 /* ForgetPasswordView.m */; };
 		C3ACF7411D91555B0015F3C8 /* ForgetPasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3ACF7401D91555B0015F3C8 /* ForgetPasswordView.xib */; };
@@ -225,6 +226,7 @@
 		C3908E941D69B54400DDAD3C /* time1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time1.png; sourceTree = "<group>"; };
 		C3908E951D69B54400DDAD3C /* time2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time2.png; sourceTree = "<group>"; };
 		C3908E961D69B54400DDAD3C /* time3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time3.png; sourceTree = "<group>"; };
+		C3A44AE61D98BECF00563994 /* Conmon.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Conmon.js; sourceTree = "<group>"; };
 		C3ACF73A1D9155390015F3C8 /* ForgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetViewController.h; sourceTree = "<group>"; };
 		C3ACF73B1D9155390015F3C8 /* ForgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetViewController.m; sourceTree = "<group>"; };
 		C3ACF73D1D91554B0015F3C8 /* ForgetPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordView.h; sourceTree = "<group>"; };
@@ -764,6 +766,7 @@
 		C3B7E2551D77F9960033B9E7 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C3A44AE61D98BECF00563994 /* Conmon.js */,
 				C31366191D94E06F00E3EF47 /* main.js */,
 				C313661B1D9504A100E3EF47 /* JPTableViewController.js */,
 				C3D100AB1D951CAD005D6BE8 /* JPTableView.js */,
@@ -957,6 +960,7 @@
 				C31DA43D1D937DCE00B1F3B6 /* gu.mp3 in Resources */,
 				C3908E9F1D69B54400DDAD3C /* time3.png in Resources */,
 				C3B7E26C1D7800DD0033B9E7 /* Main.storyboard in Resources */,
+				C3A44AE71D98BECF00563994 /* Conmon.js in Resources */,
 				C3908E991D69B54400DDAD3C /* 3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

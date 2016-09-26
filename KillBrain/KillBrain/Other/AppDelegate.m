@@ -29,6 +29,9 @@
   _guideVC = guideVC;
   _commonVC = commonVC;
   
+  
+  [AMapServices sharedServices].apiKey = @"d05b38af47c7d21a6394147df8c1d47a";
+  
   [self loadJSPatch];
   [self loadWindow];
   [self login];
@@ -100,14 +103,21 @@
 
 - (void)loadJSPatch
 {
-#if TARGET_IPHONE_SIMULATOR
-  NSString *rootPath = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"projectPath"];
-#else
-  NSString *rootPath = [[NSBundle mainBundle] bundlePath];
-#endif
-  NSString *scriptRootPath = [rootPath stringByAppendingPathComponent:@"Other"];
-  NSString *mainScriptPath = [NSString stringWithFormat:@"%@/%@", scriptRootPath, @"/main.js"];
-  [JPEngine evaluateScriptWithPath:mainScriptPath];
+//#if TARGET_IPHONE_SIMULATOR
+//  NSString *rootPath = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"projectPath"];
+//#else
+//  NSString *rootPath = [[NSBundle mainBundle] bundlePath];
+//#endif
+//  NSString *scriptRootPath = [rootPath stringByAppendingPathComponent:@"Other"];
+//  NSString *mainScriptPath = [NSString stringWithFormat:@"%@/%@", scriptRootPath, @"main.js"];
+//  
+//  NSLog(@"%@",mainScriptPath);
+  
+  NSString *path = [[NSBundle mainBundle] pathForResource:@"main" ofType:@"js"];
+  
+  [JPEngine evaluateScriptWithPath:path];
+  
+  
 }
 
 - (void)dealloc
