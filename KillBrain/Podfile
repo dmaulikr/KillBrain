@@ -12,4 +12,17 @@ target ‘KillBrain’ do
  pod 'Masonry'
  pod 'JSPatch'
  pod 'AMap2DMap'
+
+pod 'React', :subspecs => [
+    'Core',
+    'RCTActionSheet',
+    'RCTImage',
+    'RCTNetwork',
+    'RCTText',
+    'RCTWebSocket',
+    'RCTPushNotification',
+    'RCTLinkingIOS',
+    'RCTVibration',
+  ], :path => '../node_modules/react-native'
+
 end

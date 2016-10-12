@@ -18,7 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
   self.view.backgroundColor = cyanColor();
-  self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"位置" style:UIBarButtonItemStyleDone target:self action:@selector(handleItem)];
+  self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"位置"
+                                                                            style:UIBarButtonItemStyleDone
+                                                                           target:self
+                                                                           action:@selector(handleItem)];
   
 
 }

@@ -7,7 +7,8 @@
 //
 
 #import "SecondViewController.h"
-
+#import "RCTBundleURLProvider.h"
+#import "RCTRootView.h"
 @interface SecondViewController ()
 
 @end
@@ -20,6 +21,18 @@
   self.view.backgroundColor = [UIColor cyanColor];
   self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(back)];
   self.showType = ShowTypeModal;
+  
+  NSURL *jsCodeLocation;
+  
+  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
+  
+  RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
+                                                      moduleName:@"KillBrain"
+                                               initialProperties:nil
+                                                   launchOptions:nil];
+  rootView.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64);
+//  self.view = rootView;
+  [self.view addSubview:rootView];
 }
 
 - (void)back
