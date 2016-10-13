@@ -18,6 +18,8 @@
 		C313661A1D94E06F00E3EF47 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = C31366191D94E06F00E3EF47 /* main.js */; };
 		C313661C1D9504A100E3EF47 /* JPTableViewController.js in Resources */ = {isa = PBXBuildFile; fileRef = C313661B1D9504A100E3EF47 /* JPTableViewController.js */; };
 		C31DA43D1D937DCE00B1F3B6 /* gu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C31DA43C1D937DCE00B1F3B6 /* gu.mp3 */; };
+		C31FD5081DAF28C50097D9F7 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = C31FD5071DAF28C50097D9F7 /* main.jsbundle */; };
+		C31FD50A1DAF2B460097D9F7 /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C31FD5091DAF2B460097D9F7 /* add@2x.png */; };
 		C32684671D68641300E1BAA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C32684661D68641300E1BAA6 /* main.m */; };
 		C32684721D68641300E1BAA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32684711D68641300E1BAA6 /* Assets.xcassets */; };
 		C32684751D68641300E1BAA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32684731D68641300E1BAA6 /* LaunchScreen.storyboard */; };
@@ -85,14 +87,12 @@
 		C3BFE9061D90CAD1002EB036 /* MyRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BFE9051D90CAD1002EB036 /* MyRegisterView.m */; };
 		C3BFE9081D90CAE0002EB036 /* MyRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3BFE9071D90CAE0002EB036 /* MyRegisterView.xib */; };
 		C3C7316C1D9264760026014B /* cart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C7316A1D9264760026014B /* cart@2x.png */; };
-		C3C7316D1D9264760026014B /* center@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C7316B1D9264760026014B /* center@2x.png */; };
 		C3D100AC1D951CAE005D6BE8 /* JPTableView.js in Resources */ = {isa = PBXBuildFile; fileRef = C3D100AB1D951CAD005D6BE8 /* JPTableView.js */; };
 		C3EF6A2C1D90D04300AD376B /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EF6A2B1D90D04300AD376B /* RegisterViewController.m */; };
 		C3F18D351D86AE3400B08CC2 /* tap.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F18D341D86AE3400B08CC2 /* tap.png */; };
 		C3F50F0B1D925E8100E5F754 /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F50F0A1D925E8100E5F754 /* CommonViewController.m */; };
 		C3F50F111D925EF000E5F754 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F50F101D925EF000E5F754 /* SecondViewController.m */; };
 		C3F50F141D925EFC00E5F754 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F50F131D925EFC00E5F754 /* ThirdViewController.m */; };
-		C3F50F171D925F0500E5F754 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F50F161D925F0500E5F754 /* FourViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +129,8 @@
 		C31366191D94E06F00E3EF47 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		C313661B1D9504A100E3EF47 /* JPTableViewController.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JPTableViewController.js; sourceTree = "<group>"; };
 		C31DA43C1D937DCE00B1F3B6 /* gu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gu.mp3; sourceTree = "<group>"; };
+		C31FD5071DAF28C50097D9F7 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		C31FD5091DAF2B460097D9F7 /* add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@2x.png"; sourceTree = "<group>"; };
 		C32684621D68641300E1BAA6 /* KillBrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KillBrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32684661D68641300E1BAA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C32684711D68641300E1BAA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -244,7 +246,6 @@
 		C3BFE9051D90CAD1002EB036 /* MyRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRegisterView.m; sourceTree = "<group>"; };
 		C3BFE9071D90CAE0002EB036 /* MyRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyRegisterView.xib; sourceTree = "<group>"; };
 		C3C7316A1D9264760026014B /* cart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cart@2x.png"; sourceTree = "<group>"; };
-		C3C7316B1D9264760026014B /* center@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "center@2x.png"; sourceTree = "<group>"; };
 		C3D100AB1D951CAD005D6BE8 /* JPTableView.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JPTableView.js; sourceTree = "<group>"; };
 		C3EF6A2A1D90D04300AD376B /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		C3EF6A2B1D90D04300AD376B /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
@@ -255,8 +256,6 @@
 		C3F50F101D925EF000E5F754 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		C3F50F121D925EFC00E5F754 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		C3F50F131D925EFC00E5F754 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		C3F50F151D925F0500E5F754 /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
-		C3F50F161D925F0500E5F754 /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
 		C9B8A2D23525DD68D138781C /* Pods-KillBrain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KillBrain.release.xcconfig"; path = "Pods/Target Support Files/Pods-KillBrain/Pods-KillBrain.release.xcconfig"; sourceTree = "<group>"; };
 		CC040A49748DB92C2FF4EC93 /* libPods-KillBrain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KillBrain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -346,6 +345,7 @@
 		C32684641D68641300E1BAA6 /* KillBrain */ = {
 			isa = PBXGroup;
 			children = (
+				C31FD5071DAF28C50097D9F7 /* main.jsbundle */,
 				C3F50F081D925E7100E5F754 /* Common */,
 				C30F2AA21D9223F400C8E3B3 /* Guide */,
 				C34934061D8FE05A0004F730 /* Login */,
@@ -354,7 +354,6 @@
 				C32684BC1D68760F00E1BAA6 /* Home */,
 				C3F50F0C1D925EC700E5F754 /* Second */,
 				C3F50F0D1D925ED300E5F754 /* Third */,
-				C3F50F0E1D925EE100E5F754 /* Four */,
 				C32684A51D686B0700E1BAA6 /* Category */,
 				C32684711D68641300E1BAA6 /* Assets.xcassets */,
 				C32684731D68641300E1BAA6 /* LaunchScreen.storyboard */,
@@ -740,9 +739,9 @@
 		C3908E8D1D69B54400DDAD3C /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C31FD5091DAF2B460097D9F7 /* add@2x.png */,
 				C31DA43C1D937DCE00B1F3B6 /* gu.mp3 */,
 				C3C7316A1D9264760026014B /* cart@2x.png */,
-				C3C7316B1D9264760026014B /* center@2x.png */,
 				C30F2AAB1D922ED200C8E3B3 /* bg.png */,
 				C3F18D341D86AE3400B08CC2 /* tap.png */,
 				C38F91991D6C534000DAB78B /* alpha@2x.png */,
@@ -804,15 +803,6 @@
 				C3F50F131D925EFC00E5F754 /* ThirdViewController.m */,
 			);
 			path = Third;
-			sourceTree = "<group>";
-		};
-		C3F50F0E1D925EE100E5F754 /* Four */ = {
-			isa = PBXGroup;
-			children = (
-				C3F50F151D925F0500E5F754 /* FourViewController.h */,
-				C3F50F161D925F0500E5F754 /* FourViewController.m */,
-			);
-			path = Four;
 			sourceTree = "<group>";
 		};
 		D1845CA39C7F15ED0D580ADC /* Frameworks */ = {
@@ -936,7 +926,6 @@
 				C3908E981D69B54400DDAD3C /* 2.jpg in Resources */,
 				C3908E971D69B54400DDAD3C /* 1.jpg in Resources */,
 				C38F91501D6C293D00DAB78B /* FFTspark.png in Resources */,
-				C3C7316D1D9264760026014B /* center@2x.png in Resources */,
 				C3908E9B1D69B54400DDAD3C /* go.png in Resources */,
 				C38F919B1D6C534000DAB78B /* alpha@2x.png in Resources */,
 				C3C7316C1D9264760026014B /* cart@2x.png in Resources */,
@@ -958,8 +947,10 @@
 				C30F2AAC1D922ED200C8E3B3 /* bg.png in Resources */,
 				C3908E9E1D69B54400DDAD3C /* time2.png in Resources */,
 				C31DA43D1D937DCE00B1F3B6 /* gu.mp3 in Resources */,
+				C31FD50A1DAF2B460097D9F7 /* add@2x.png in Resources */,
 				C3908E9F1D69B54400DDAD3C /* time3.png in Resources */,
 				C3B7E26C1D7800DD0033B9E7 /* Main.storyboard in Resources */,
+				C31FD5081DAF28C50097D9F7 /* main.jsbundle in Resources */,
 				C3A44AE71D98BECF00563994 /* Conmon.js in Resources */,
 				C3908E991D69B54400DDAD3C /* 3.jpg in Resources */,
 			);
@@ -1078,7 +1069,6 @@
 				C32684AE1D686B1000E1BAA6 /* UIImage+Extension.m in Sources */,
 				C3F50F0B1D925E8100E5F754 /* CommonViewController.m in Sources */,
 				C33D5B091D929B15007185E6 /* WordsApi.m in Sources */,
-				C3F50F171D925F0500E5F754 /* FourViewController.m in Sources */,
 				C33D5B181D929BDF007185E6 /* MemonryProtocol.m in Sources */,
 				C381B8C61D77DA3300861B90 /* TestApi.m in Sources */,
 				C381B87F1D77D99E00861B90 /* MainViewProtocol.m in Sources */,

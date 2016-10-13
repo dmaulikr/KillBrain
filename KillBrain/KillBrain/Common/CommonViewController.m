@@ -27,22 +27,17 @@
   SecondViewController *sec = [[SecondViewController alloc] init];
   sec.tabBarItem.title = @"Second";
   sec.showType = ShowTypeModal;
-  sec.tabBarItem.image = [[UIImage imageNamed:@"cart"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+  sec.tabBarItem.image = [[UIImage imageNamed:@"add"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
   
   ThirdViewController *thi = [[ThirdViewController alloc] init];
   thi.tabBarItem.title = @"Third";
-  thi.tabBarItem.image = [[UIImage imageNamed:@"center"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+  thi.tabBarItem.image = [[UIImage imageNamed:@"cart"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
   UINavigationController *tNav = [[UINavigationController alloc] initWithRootViewController:thi];
 
-  
-  FourViewController *four = [[FourViewController alloc] init];
-  four.tabBarItem.title = @"Fourth";
-  four.tabBarItem.image = [[UIImage imageNamed:@"cart"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
   
   [self addChildViewController:fNav];
   [self addChildViewController:sec];
   [self addChildViewController:tNav];
-  [self addChildViewController:four];
   
   self.animationed = YES;
   self.musical = YES;
